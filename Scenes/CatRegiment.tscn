@@ -1,0 +1,65 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbyxxwc60hi4w"]
+
+[ext_resource type="Script" path="res://Scripts/CatReg.gd" id="1_2kc17"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_s1c47"]
+radius = 0.1
+height = 0.4
+
+[node name="CatRegiment" type="Node3D"]
+script = ExtResource("1_2kc17")
+
+[node name="Visual" type="Node3D" parent="."]
+
+[node name="Cat1" type="Node3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Cat1"]
+mesh = SubResource("CapsuleMesh_s1c47")
+
+[node name="Cat2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000899613, -0.00146282, 0.291273)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Cat2"]
+mesh = SubResource("CapsuleMesh_s1c47")
+
+[node name="Cat3" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.308192)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Cat3"]
+mesh = SubResource("CapsuleMesh_s1c47")
+
+[node name="Cat4" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.261881, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Cat4"]
+mesh = SubResource("CapsuleMesh_s1c47")
+
+[node name="Cat5" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.26278, -0.00146282, 0.291273)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Cat5"]
+mesh = SubResource("CapsuleMesh_s1c47")
+
+[node name="Cat6" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.261881, 0, -0.308192)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Cat6"]
+mesh = SubResource("CapsuleMesh_s1c47")
+
+[node name="Cat7" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.511424, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Cat7"]
+mesh = SubResource("CapsuleMesh_s1c47")
+
+[node name="Cat8" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.512324, -0.00146282, 0.291273)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Cat8"]
+mesh = SubResource("CapsuleMesh_s1c47")
+
+[node name="Cat9" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.511424, 0, -0.308192)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Cat9"]
+mesh = SubResource("CapsuleMesh_s1c47")

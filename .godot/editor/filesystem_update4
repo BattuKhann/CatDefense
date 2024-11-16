@@ -1,0 +1,8 @@
+res://Scenes/GridSystem.tscn
+res://Scripts/GridSystem.gd
+res://Scenes/CatRegiment.tscn
+res://Scripts/CatReg.gd
+res://Scripts/Square.gd
+res://Scripts/Unit.gd
+res://Scripts/Troop.gd
+res://Scenes/test_scene.tscn
