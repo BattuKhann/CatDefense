@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://d4iomu1ndb7ch"]
+
+[ext_resource type="PackedScene" uid="uid://homyvwp7g3wf" path="res://Assets/kenney_castle-kit/Models/GLB format/wall.glb" id="1_cuvlw"]
+
+[node name="Wall" type="Node3D"]
+
+[node name="wall2" parent="." instance=ExtResource("1_cuvlw")]

@@ -1,7 +1,21 @@
-[gd_scene load_steps=5 format=3 uid="uid://boknq7lclb3qp"]
+[gd_scene load_steps=9 format=3 uid="uid://boknq7lclb3qp"]
 
 [ext_resource type="PackedScene" uid="uid://468xuqpurgrx" path="res://Scenes/GridSystem.tscn" id="1_7muv2"]
+[ext_resource type="Script" path="res://Scripts/main_camera.gd" id="1_omha8"]
 [ext_resource type="PackedScene" uid="uid://bbyxxwc60hi4w" path="res://Scenes/CatRegiment.tscn" id="2_l3pwm"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_sk0j4"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_j2epf"]
+sky_material = SubResource("ProceduralSkyMaterial_sk0j4")
+
+[sub_resource type="Environment" id="Environment_djsex"]
+background_mode = 2
+sky = SubResource("Sky_j2epf")
+tonemap_mode = 2
+glow_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j7khn"]
 albedo_color = Color(0.114897, 0.114897, 0.114897, 1)
@@ -12,8 +26,16 @@ size = Vector2(20, 20)
 
 [node name="TestScene" type="Node3D"]
 
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_djsex")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 7, 0)
+shadow_enabled = true
+
 [node name="MainCamera" type="Camera3D" parent="."]
 transform = Transform3D(-4.2222e-08, -0.258819, 0.965926, -1.13133e-08, 0.965926, 0.258819, -1, 8.88178e-16, -4.37114e-08, 8, 4, 0)
+script = ExtResource("1_omha8")
 
 [node name="GridSystem" parent="." instance=ExtResource("1_7muv2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.02, 0)
