@@ -144,3 +144,591 @@ mesh = SubResource("PlaneMesh_4gj7f")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Row1/Square9"]
 shape = SubResource("ConcavePolygonShape3D_1dchu")
+
+[node name="Row2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+script = ExtResource("2_m3tlv")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 9, 0, -0.01, 0)
+mesh = SubResource("PlaneMesh_6oua1")
+surface_material_override/0 = SubResource("StandardMaterial3D_yinec")
+
+[node name="Square1" type="Area3D" parent="Row2"]
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row2/Square1"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row2/Square1"]
+shape = SubResource("ConcavePolygonShape3D_n3ees")
+
+[node name="Square2" type="Area3D" parent="Row2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row2/Square2"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row2/Square2"]
+shape = SubResource("ConcavePolygonShape3D_wfqo8")
+
+[node name="Square3" type="Area3D" parent="Row2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row2/Square3"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row2/Square3"]
+shape = SubResource("ConcavePolygonShape3D_6apw0")
+
+[node name="Square4" type="Area3D" parent="Row2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row2/Square4"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row2/Square4"]
+shape = SubResource("ConcavePolygonShape3D_bk80k")
+
+[node name="Square5" type="Area3D" parent="Row2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row2/Square5"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row2/Square5"]
+shape = SubResource("ConcavePolygonShape3D_w2kwx")
+
+[node name="Square6" type="Area3D" parent="Row2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row2/Square6"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row2/Square6"]
+shape = SubResource("ConcavePolygonShape3D_4bvr3")
+
+[node name="Square7" type="Area3D" parent="Row2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row2/Square7"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row2/Square7"]
+shape = SubResource("ConcavePolygonShape3D_bpo3k")
+
+[node name="Square8" type="Area3D" parent="Row2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row2/Square8"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row2/Square8"]
+shape = SubResource("ConcavePolygonShape3D_8uora")
+
+[node name="Square9" type="Area3D" parent="Row2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row2/Square9"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row2/Square9"]
+shape = SubResource("ConcavePolygonShape3D_1dchu")
+
+[node name="Row3" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+script = ExtResource("2_m3tlv")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 9, 0, -0.01, 0)
+mesh = SubResource("PlaneMesh_6oua1")
+surface_material_override/0 = SubResource("StandardMaterial3D_yinec")
+
+[node name="Square1" type="Area3D" parent="Row3"]
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row3/Square1"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row3/Square1"]
+shape = SubResource("ConcavePolygonShape3D_n3ees")
+
+[node name="Square2" type="Area3D" parent="Row3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row3/Square2"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row3/Square2"]
+shape = SubResource("ConcavePolygonShape3D_wfqo8")
+
+[node name="Square3" type="Area3D" parent="Row3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row3/Square3"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row3/Square3"]
+shape = SubResource("ConcavePolygonShape3D_6apw0")
+
+[node name="Square4" type="Area3D" parent="Row3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row3/Square4"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row3/Square4"]
+shape = SubResource("ConcavePolygonShape3D_bk80k")
+
+[node name="Square5" type="Area3D" parent="Row3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row3/Square5"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row3/Square5"]
+shape = SubResource("ConcavePolygonShape3D_w2kwx")
+
+[node name="Square6" type="Area3D" parent="Row3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row3/Square6"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row3/Square6"]
+shape = SubResource("ConcavePolygonShape3D_4bvr3")
+
+[node name="Square7" type="Area3D" parent="Row3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row3/Square7"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row3/Square7"]
+shape = SubResource("ConcavePolygonShape3D_bpo3k")
+
+[node name="Square8" type="Area3D" parent="Row3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row3/Square8"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row3/Square8"]
+shape = SubResource("ConcavePolygonShape3D_8uora")
+
+[node name="Square9" type="Area3D" parent="Row3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row3/Square9"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row3/Square9"]
+shape = SubResource("ConcavePolygonShape3D_1dchu")
+
+[node name="Row4" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+script = ExtResource("2_m3tlv")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 9, 0, -0.01, 0)
+mesh = SubResource("PlaneMesh_6oua1")
+surface_material_override/0 = SubResource("StandardMaterial3D_yinec")
+
+[node name="Square1" type="Area3D" parent="Row4"]
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row4/Square1"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row4/Square1"]
+shape = SubResource("ConcavePolygonShape3D_n3ees")
+
+[node name="Square2" type="Area3D" parent="Row4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row4/Square2"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row4/Square2"]
+shape = SubResource("ConcavePolygonShape3D_wfqo8")
+
+[node name="Square3" type="Area3D" parent="Row4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row4/Square3"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row4/Square3"]
+shape = SubResource("ConcavePolygonShape3D_6apw0")
+
+[node name="Square4" type="Area3D" parent="Row4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row4/Square4"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row4/Square4"]
+shape = SubResource("ConcavePolygonShape3D_bk80k")
+
+[node name="Square5" type="Area3D" parent="Row4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row4/Square5"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row4/Square5"]
+shape = SubResource("ConcavePolygonShape3D_w2kwx")
+
+[node name="Square6" type="Area3D" parent="Row4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row4/Square6"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row4/Square6"]
+shape = SubResource("ConcavePolygonShape3D_4bvr3")
+
+[node name="Square7" type="Area3D" parent="Row4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row4/Square7"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row4/Square7"]
+shape = SubResource("ConcavePolygonShape3D_bpo3k")
+
+[node name="Square8" type="Area3D" parent="Row4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row4/Square8"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row4/Square8"]
+shape = SubResource("ConcavePolygonShape3D_8uora")
+
+[node name="Square9" type="Area3D" parent="Row4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row4/Square9"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row4/Square9"]
+shape = SubResource("ConcavePolygonShape3D_1dchu")
+
+[node name="Row5" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+script = ExtResource("2_m3tlv")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 9, 0, -0.01, 0)
+mesh = SubResource("PlaneMesh_6oua1")
+surface_material_override/0 = SubResource("StandardMaterial3D_yinec")
+
+[node name="Square1" type="Area3D" parent="Row5"]
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row5/Square1"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row5/Square1"]
+shape = SubResource("ConcavePolygonShape3D_n3ees")
+
+[node name="Square2" type="Area3D" parent="Row5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row5/Square2"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row5/Square2"]
+shape = SubResource("ConcavePolygonShape3D_wfqo8")
+
+[node name="Square3" type="Area3D" parent="Row5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row5/Square3"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row5/Square3"]
+shape = SubResource("ConcavePolygonShape3D_6apw0")
+
+[node name="Square4" type="Area3D" parent="Row5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row5/Square4"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row5/Square4"]
+shape = SubResource("ConcavePolygonShape3D_bk80k")
+
+[node name="Square5" type="Area3D" parent="Row5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row5/Square5"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row5/Square5"]
+shape = SubResource("ConcavePolygonShape3D_w2kwx")
+
+[node name="Square6" type="Area3D" parent="Row5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row5/Square6"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row5/Square6"]
+shape = SubResource("ConcavePolygonShape3D_4bvr3")
+
+[node name="Square7" type="Area3D" parent="Row5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row5/Square7"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row5/Square7"]
+shape = SubResource("ConcavePolygonShape3D_bpo3k")
+
+[node name="Square8" type="Area3D" parent="Row5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row5/Square8"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row5/Square8"]
+shape = SubResource("ConcavePolygonShape3D_8uora")
+
+[node name="Square9" type="Area3D" parent="Row5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row5/Square9"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row5/Square9"]
+shape = SubResource("ConcavePolygonShape3D_1dchu")
+
+[node name="Row6" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+script = ExtResource("2_m3tlv")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 9, 0, -0.01, 0)
+mesh = SubResource("PlaneMesh_6oua1")
+surface_material_override/0 = SubResource("StandardMaterial3D_yinec")
+
+[node name="Square1" type="Area3D" parent="Row6"]
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row6/Square1"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row6/Square1"]
+shape = SubResource("ConcavePolygonShape3D_n3ees")
+
+[node name="Square2" type="Area3D" parent="Row6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row6/Square2"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row6/Square2"]
+shape = SubResource("ConcavePolygonShape3D_wfqo8")
+
+[node name="Square3" type="Area3D" parent="Row6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row6/Square3"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row6/Square3"]
+shape = SubResource("ConcavePolygonShape3D_6apw0")
+
+[node name="Square4" type="Area3D" parent="Row6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row6/Square4"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row6/Square4"]
+shape = SubResource("ConcavePolygonShape3D_bk80k")
+
+[node name="Square5" type="Area3D" parent="Row6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row6/Square5"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row6/Square5"]
+shape = SubResource("ConcavePolygonShape3D_w2kwx")
+
+[node name="Square6" type="Area3D" parent="Row6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row6/Square6"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row6/Square6"]
+shape = SubResource("ConcavePolygonShape3D_4bvr3")
+
+[node name="Square7" type="Area3D" parent="Row6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row6/Square7"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row6/Square7"]
+shape = SubResource("ConcavePolygonShape3D_bpo3k")
+
+[node name="Square8" type="Area3D" parent="Row6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row6/Square8"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row6/Square8"]
+shape = SubResource("ConcavePolygonShape3D_8uora")
+
+[node name="Square9" type="Area3D" parent="Row6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row6/Square9"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row6/Square9"]
+shape = SubResource("ConcavePolygonShape3D_1dchu")
+
+[node name="Row7" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0)
+script = ExtResource("2_m3tlv")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 9, 0, -0.01, 0)
+mesh = SubResource("PlaneMesh_6oua1")
+surface_material_override/0 = SubResource("StandardMaterial3D_yinec")
+
+[node name="Square1" type="Area3D" parent="Row7"]
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row7/Square1"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row7/Square1"]
+shape = SubResource("ConcavePolygonShape3D_n3ees")
+
+[node name="Square2" type="Area3D" parent="Row7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row7/Square2"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row7/Square2"]
+shape = SubResource("ConcavePolygonShape3D_wfqo8")
+
+[node name="Square3" type="Area3D" parent="Row7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row7/Square3"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row7/Square3"]
+shape = SubResource("ConcavePolygonShape3D_6apw0")
+
+[node name="Square4" type="Area3D" parent="Row7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row7/Square4"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row7/Square4"]
+shape = SubResource("ConcavePolygonShape3D_bk80k")
+
+[node name="Square5" type="Area3D" parent="Row7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row7/Square5"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row7/Square5"]
+shape = SubResource("ConcavePolygonShape3D_w2kwx")
+
+[node name="Square6" type="Area3D" parent="Row7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row7/Square6"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row7/Square6"]
+shape = SubResource("ConcavePolygonShape3D_4bvr3")
+
+[node name="Square7" type="Area3D" parent="Row7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row7/Square7"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row7/Square7"]
+shape = SubResource("ConcavePolygonShape3D_bpo3k")
+
+[node name="Square8" type="Area3D" parent="Row7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row7/Square8"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row7/Square8"]
+shape = SubResource("ConcavePolygonShape3D_8uora")
+
+[node name="Square9" type="Area3D" parent="Row7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+script = ExtResource("3_s1rgh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row7/Square9"]
+mesh = SubResource("PlaneMesh_4gj7f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Row7/Square9"]
+shape = SubResource("ConcavePolygonShape3D_1dchu")

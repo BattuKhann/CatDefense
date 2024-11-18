@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyoijxsy0btqb"]
+
+[ext_resource type="Script" path="res://Scripts/placement_system.gd" id="1_lr38o"]
+
+[node name="PlacementSystem" type="Node3D"]
+script = ExtResource("1_lr38o")

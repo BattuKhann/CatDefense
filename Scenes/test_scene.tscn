@@ -1,8 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://boknq7lclb3qp"]
+[gd_scene load_steps=11 format=3 uid="uid://boknq7lclb3qp"]
 
 [ext_resource type="PackedScene" uid="uid://468xuqpurgrx" path="res://Scenes/GridSystem.tscn" id="1_7muv2"]
 [ext_resource type="Script" path="res://Scripts/main_camera.gd" id="1_omha8"]
 [ext_resource type="PackedScene" uid="uid://bbyxxwc60hi4w" path="res://Scenes/CatRegiment.tscn" id="2_l3pwm"]
+[ext_resource type="PackedScene" uid="uid://dyoijxsy0btqb" path="res://Scenes/placement_system.tscn" id="4_bjjcl"]
+[ext_resource type="PackedScene" uid="uid://qsu4xbha5uot" path="res://Scenes/player_ui.tscn" id="5_xo4na"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_sk0j4"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -26,6 +28,11 @@ size = Vector2(20, 20)
 
 [node name="TestScene" type="Node3D"]
 
+[node name="Player UI" parent="." instance=ExtResource("5_xo4na")]
+
+[node name="PlacementSystem" parent="." instance=ExtResource("4_bjjcl")]
+transform = Transform3D(1, 0, 1.77636e-14, 0, 1, 4.44089e-15, -1.06581e-14, -2.66454e-15, 1, 2.38419e-06, 2.14577e-06, 1.13687e-13)
+
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_djsex")
 
@@ -45,3 +52,4 @@ mesh = SubResource("PlaneMesh_evq3w")
 
 [node name="CatRegiment" parent="." instance=ExtResource("2_l3pwm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+visible = false
