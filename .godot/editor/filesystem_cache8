@@ -1,194 +1,193 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731869252
-icon.svg::CompressedTexture2D::5918118020451191775::1731707625::1731707640::1::::<><>::
-::res://Assets/::1731865689
-::res://Assets/kenney_castle-kit/::1731865708
-License.txt::TextFile::-1::1711543040::0::1::::<><>::
-Preview.png::CompressedTexture2D::6961123172950554875::1711543066::1731865708::1::::<><>::
-Sample.png::CompressedTexture2D::9093087415002335579::1711543068::1731865708::1::::<><>::
-::res://Assets/kenney_castle-kit/Models/::1731865738
-::res://Assets/kenney_castle-kit/Models/GLB format/::1731865723
-bridge-draw.glb::PackedScene::7934160349170514714::1711543043::1731865721::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-bridge-straight-pillar.glb::PackedScene::5597813423636832879::1711543043::1731865721::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-bridge-straight.glb::PackedScene::2036537551589488023::1711543043::1731865721::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-door.glb::PackedScene::2241750603759324509::1711543043::1731865721::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-flag-banner-long.glb::PackedScene::4151198082001635366::1711543044::1731865720::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-flag-banner-short.glb::PackedScene::3612866012111419198::1711543044::1731865720::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-flag-pennant.glb::PackedScene::3163903033161945292::1711543044::1731865720::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-flag-wide.glb::PackedScene::7162802165256527590::1711543044::1731865718::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-flag.glb::PackedScene::5374457324579123969::1711543043::1731865715::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-gate.glb::PackedScene::7297083494985282887::1711543044::1731865721::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-ground-hills.glb::PackedScene::1153474332922890459::1711543044::1731865720::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-ground.glb::PackedScene::8102494957385733393::1711543044::1731865720::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-metal-gate.glb::PackedScene::1833788460543059849::1711543044::1731865720::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-rocks-large.glb::PackedScene::7575739082012206436::1711543044::1731865720::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-rocks-small.glb::PackedScene::3248764306171437119::1711543044::1731865720::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-siege-ballista-demolished.glb::PackedScene::1825472809633359123::1711543044::1731865720::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-siege-ballista.glb::PackedScene::2208854250893023965::1711543044::1731865720::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-siege-catapult-demolished.glb::PackedScene::1007074604528852464::1711543044::1731865720::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-siege-catapult.glb::PackedScene::6147133809302806659::1711543044::1731865720::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-siege-ram-demolished.glb::PackedScene::2943130587694224998::1711543044::1731865719::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-siege-ram.glb::PackedScene::2236911926344308610::1711543044::1731865723::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-siege-tower-demolished.glb::PackedScene::3665048372714053362::1711543045::1731865723::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-siege-tower.glb::PackedScene::3618948125865539783::1711543045::1731865722::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-siege-trebuchet-demolished.glb::PackedScene::3630573163286311156::1711543045::1731865722::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-siege-trebuchet.glb::PackedScene::120917052084221357::1711543045::1731865722::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-stairs-stone-square.glb::PackedScene::5399251690656437428::1711543045::1731865722::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-stairs-stone.glb::PackedScene::6145483003832073029::1711543045::1731865722::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-base.glb::PackedScene::7058828407233654360::1711543045::1731865722::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-hexagon-base.glb::PackedScene::2984965514424042999::1711543045::1731865722::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-hexagon-mid.glb::PackedScene::505553475986034473::1711543045::1731865722::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-hexagon-roof-secondary.glb::PackedScene::5584505829733189062::1711543045::1731865722::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-hexagon-roof.glb::PackedScene::7849963362192600306::1711543045::1731865722::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-hexagon-top-wood.glb::PackedScene::8734040242289502313::1711543045::1731865722::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-hexagon-top.glb::PackedScene::1491244825269307513::1711543045::1731865721::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-slant-roof.glb::PackedScene::5989356993986794711::1711543045::1731865721::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-square-arch.glb::PackedScene::1557101220268015540::1711543045::1731865721::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-square-base-border.glb::PackedScene::6410513270290288981::1711543045::1731865721::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-square-base-color.glb::PackedScene::9051148287555028788::1711543046::1731865721::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-square-base.glb::PackedScene::5737587130114563354::1711543045::1731865721::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-square-mid-color.glb::PackedScene::465854946352330239::1711543046::1731865718::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-square-mid-door.glb::PackedScene::3821635054778093960::1711543046::1731865718::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-square-mid-open-simple.glb::PackedScene::4277120021413911546::1711543046::1731865718::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-square-mid-open.glb::PackedScene::7014030471329725175::1711543046::1731865718::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-square-mid-windows.glb::PackedScene::7208455912609133737::1711543046::1731865717::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-square-mid.glb::PackedScene::5930912063798289440::1711543046::1731865717::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-square-roof.glb::PackedScene::7576357615816380700::1711543046::1731865717::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-square-top-color.glb::PackedScene::63161874968947001::1711543046::1731865717::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-square-top-roof-high-windows.glb::PackedScene::673199656349958551::1711543046::1731865717::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-square-top-roof-high.glb::PackedScene::3446058357414429386::1711543046::1731865717::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-square-top-roof-rounded.glb::PackedScene::1865186653875261421::1711543046::1731865717::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-square-top-roof.glb::PackedScene::7597785471966101719::1711543046::1731865717::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-square-top.glb::PackedScene::1923169316039967562::1711543046::1731865717::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-square.glb::PackedScene::4180310404850736544::1711543045::1731865717::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tower-top.glb::PackedScene::7495700575154050038::1711543046::1731865717::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tree-large.glb::PackedScene::313008443572984037::1711543046::1731865717::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tree-log.glb::PackedScene::5134192069628615492::1711543046::1731865716::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tree-small.glb::PackedScene::2252640396203076301::1711543046::1731865716::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-tree-trunk.glb::PackedScene::796956689259136152::1711543047::1731865716::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-wall-corner-half-tower.glb::PackedScene::3626263650014210132::1711543047::1731865719::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-wall-corner-half.glb::PackedScene::444283669663894743::1711543047::1731865719::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-wall-corner-slant.glb::PackedScene::3450583420275804293::1711543047::1731865719::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-wall-corner.glb::PackedScene::4990318662749391358::1711543047::1731865719::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-wall-doorway.glb::PackedScene::2611840193694240595::1711543047::1731865719::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-wall-half-modular.glb::PackedScene::629797979589282208::1711543047::1731865719::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-wall-half.glb::PackedScene::1359290585070437790::1711543047::1731865719::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-wall-narrow-corner.glb::PackedScene::859830174726328973::1711543047::1731865719::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-wall-narrow-gate.glb::PackedScene::6817355993835867211::1711543047::1731865719::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-wall-narrow-stairs-rail.glb::PackedScene::295239049601150966::1711543047::1731865719::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-wall-narrow-stairs.glb::PackedScene::2830239328402691467::1711543047::1731865719::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-wall-narrow-wood-fence.glb::PackedScene::6891043395235444059::1711543047::1731865718::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-wall-narrow-wood.glb::PackedScene::8959531408666859119::1711543047::1731865718::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-wall-narrow.glb::PackedScene::409397849171063886::1711543047::1731865718::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-wall-pillar.glb::PackedScene::5653144718836515497::1711543047::1731865718::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-wall-stud.glb::PackedScene::5495097693566486886::1711543047::1731865718::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-wall-to-narrow.glb::PackedScene::1593272270965639341::1711543047::1731865718::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-wall.glb::PackedScene::520995794690591857::1711543047::1731865718::1::::<><>::uid://6wpvcmbve2lb::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-::res://Assets/kenney_castle-kit/Models/GLB format/Textures/::1731865723
-colormap.png::CompressedTexture2D::2222218843589859315::1711543070::1731865723::1::::<><>::
-::res://Assets/kenney_castle-kit/Models/Textures/::1731865708
-variation-a.png::CompressedTexture2D::8290765208489547299::1711543069::1731865708::1::::<><>::
-variation-b.png::CompressedTexture2D::2912902488581653528::1711543069::1731865708::1::::<><>::
-variation-c.png::CompressedTexture2D::424881476094601702::1711543069::1731865708::1::::<><>::
-variation-d.png::CompressedTexture2D::4406949759389090595::1711543069::1731865708::1::::<><>::
-variation-e.png::CompressedTexture2D::4008581452352859964::1711543069::1731865708::1::::<><>::
-variation-f.png::CompressedTexture2D::7359743881594545626::1711543069::1731865708::1::::<><>::
-variation-g.png::CompressedTexture2D::6352104355802513292::1711543069::1731865708::1::::<><>::
-::res://Assets/kenney_castle-kit/Previews/::1731865708
-bridge-draw.png::CompressedTexture2D::3228292544664817629::1711543068::1731865708::1::::<><>::
-bridge-straight-pillar.png::CompressedTexture2D::2618389518567208026::1711543068::1731865708::1::::<><>::
-bridge-straight.png::CompressedTexture2D::4126588008896589799::1711543068::1731865708::1::::<><>::
-door.png::CompressedTexture2D::6641082086842651369::1711543068::1731865708::1::::<><>::
-flag-banner-long.png::CompressedTexture2D::5533696373990396110::1711543068::1731865708::1::::<><>::
-flag-banner-short.png::CompressedTexture2D::2231187695938280723::1711543068::1731865708::1::::<><>::
-flag-pennant.png::CompressedTexture2D::2571689190562669102::1711543068::1731865708::1::::<><>::
-flag-wide.png::CompressedTexture2D::7822397268472525562::1711543068::1731865708::1::::<><>::
-flag.png::CompressedTexture2D::7453711866133400909::1711543068::1731865708::1::::<><>::
-gate.png::CompressedTexture2D::3941509163924625485::1711543069::1731865708::1::::<><>::
-ground-hills.png::CompressedTexture2D::1076026060916004562::1711543069::1731865708::1::::<><>::
-ground.png::CompressedTexture2D::95979084153552399::1711543069::1731865708::1::::<><>::
-metal-gate.png::CompressedTexture2D::5769681541773860030::1711543069::1731865708::1::::<><>::
-rocks-large.png::CompressedTexture2D::3050535879490663189::1711543069::1731865708::1::::<><>::
-rocks-small.png::CompressedTexture2D::3119560948270964016::1711543069::1731865708::1::::<><>::
-siege-ballista-demolished.png::CompressedTexture2D::8837430907812758515::1711543069::1731865708::1::::<><>::
-siege-ballista.png::CompressedTexture2D::8243356706723671178::1711543069::1731865708::1::::<><>::
-siege-catapult-demolished.png::CompressedTexture2D::2053396159515033308::1711543069::1731865708::1::::<><>::
-siege-catapult.png::CompressedTexture2D::774144279840345417::1711543069::1731865708::1::::<><>::
-siege-ram-demolished.png::CompressedTexture2D::2127081643860047289::1711543069::1731865708::1::::<><>::
-siege-ram.png::CompressedTexture2D::1635289987875993237::1711543069::1731865708::1::::<><>::
-siege-tower-demolished.png::CompressedTexture2D::3368946117048979291::1711543069::1731865708::1::::<><>::
-siege-tower.png::CompressedTexture2D::2631528514804802061::1711543069::1731865708::1::::<><>::
-siege-trebuchet-demolished.png::CompressedTexture2D::5141714660768218278::1711543069::1731865708::1::::<><>::
-siege-trebuchet.png::CompressedTexture2D::1512471299785008484::1711543069::1731865708::1::::<><>::
-stairs-stone-square.png::CompressedTexture2D::6706600987212125::1711543069::1731865708::1::::<><>::
-stairs-stone.png::CompressedTexture2D::8029005354569863389::1711543069::1731865708::1::::<><>::
-tower-base.png::CompressedTexture2D::7921486469719636554::1711543069::1731865708::1::::<><>::
-tower-hexagon-base.png::CompressedTexture2D::894994556825580434::1711543069::1731865708::1::::<><>::
-tower-hexagon-mid.png::CompressedTexture2D::6606907350087813874::1711543069::1731865708::1::::<><>::
-tower-hexagon-roof-secondary.png::CompressedTexture2D::6782628801607064340::1711543069::1731865708::1::::<><>::
-tower-hexagon-roof.png::CompressedTexture2D::8407483060784269312::1711543069::1731865708::1::::<><>::
-tower-hexagon-top-wood.png::CompressedTexture2D::6037785481088105530::1711543069::1731865708::1::::<><>::
-tower-hexagon-top.png::CompressedTexture2D::1424634055993682285::1711543069::1731865708::1::::<><>::
-tower-slant-roof.png::CompressedTexture2D::7541330313493113903::1711543069::1731865708::1::::<><>::
-tower-square-arch.png::CompressedTexture2D::2530821763740349350::1711543069::1731865708::1::::<><>::
-tower-square-base-border.png::CompressedTexture2D::86979708748039954::1711543069::1731865708::1::::<><>::
-tower-square-base-color.png::CompressedTexture2D::6430115887406638390::1711543069::1731865708::1::::<><>::
-tower-square-base.png::CompressedTexture2D::4977108253079460801::1711543069::1731865708::1::::<><>::
-tower-square-mid-color.png::CompressedTexture2D::1581984714530859332::1711543069::1731865708::1::::<><>::
-tower-square-mid-door.png::CompressedTexture2D::6022833653557053673::1711543069::1731865708::1::::<><>::
-tower-square-mid-open-simple.png::CompressedTexture2D::6940742848436717096::1711543069::1731865708::1::::<><>::
-tower-square-mid-open.png::CompressedTexture2D::3174902934295098460::1711543069::1731865708::1::::<><>::
-tower-square-mid-windows.png::CompressedTexture2D::8488920550761972477::1711543069::1731865708::1::::<><>::
-tower-square-mid.png::CompressedTexture2D::8172792390234975784::1711543069::1731865708::1::::<><>::
-tower-square-roof.png::CompressedTexture2D::8892759118694515098::1711543069::1731865708::1::::<><>::
-tower-square-top-color.png::CompressedTexture2D::4606062166045871121::1711543069::1731865708::1::::<><>::
-tower-square-top-roof-high-windows.png::CompressedTexture2D::8650543807895471454::1711543069::1731865708::1::::<><>::
-tower-square-top-roof-high.png::CompressedTexture2D::4660930670015619672::1711543069::1731865708::1::::<><>::
-tower-square-top-roof-rounded.png::CompressedTexture2D::7344168545080166992::1711543069::1731865708::1::::<><>::
-tower-square-top-roof.png::CompressedTexture2D::2827813087531875341::1711543069::1731865708::1::::<><>::
-tower-square-top.png::CompressedTexture2D::4150119910748071017::1711543069::1731865708::1::::<><>::
-tower-square.png::CompressedTexture2D::1807888718487078664::1711543069::1731865708::1::::<><>::
-tower-top.png::CompressedTexture2D::2871874643411227518::1711543069::1731865708::1::::<><>::
-tree-large.png::CompressedTexture2D::543388131704421758::1711543069::1731865708::1::::<><>::
-tree-log.png::CompressedTexture2D::4797424527408767714::1711543069::1731865708::1::::<><>::
-tree-small.png::CompressedTexture2D::5112094665610220822::1711543069::1731865708::1::::<><>::
-tree-trunk.png::CompressedTexture2D::7734974708000872878::1711543069::1731865708::1::::<><>::
-wall-corner-half-tower.png::CompressedTexture2D::2231495638509318141::1711543069::1731865708::1::::<><>::
-wall-corner-half.png::CompressedTexture2D::9093846349782806190::1711543069::1731865708::1::::<><>::
-wall-corner-slant.png::CompressedTexture2D::4404079997573252860::1711543069::1731865708::1::::<><>::
-wall-corner.png::CompressedTexture2D::3428806640603487086::1711543069::1731865708::1::::<><>::
-wall-doorway.png::CompressedTexture2D::5910254285820286729::1711543069::1731865708::1::::<><>::
-wall-half-modular.png::CompressedTexture2D::5663011354169230268::1711543069::1731865708::1::::<><>::
-wall-half.png::CompressedTexture2D::2449311392557589302::1711543069::1731865708::1::::<><>::
-wall-narrow-corner.png::CompressedTexture2D::4112209020491200199::1711543069::1731865708::1::::<><>::
-wall-narrow-gate.png::CompressedTexture2D::1743536417378524238::1711543069::1731865708::1::::<><>::
-wall-narrow-stairs-rail.png::CompressedTexture2D::6859391849139197548::1711543069::1731865708::1::::<><>::
-wall-narrow-stairs.png::CompressedTexture2D::1155682990907259497::1711543069::1731865708::1::::<><>::
-wall-narrow-wood-fence.png::CompressedTexture2D::2982893586312963685::1711543069::1731865708::1::::<><>::
-wall-narrow-wood.png::CompressedTexture2D::8412270628912690904::1711543069::1731865708::1::::<><>::
-wall-narrow.png::CompressedTexture2D::582396825883182673::1711543069::1731865708::1::::<><>::
-wall-pillar.png::CompressedTexture2D::6274816286180446210::1711543069::1731865708::1::::<><>::
-wall-stud.png::CompressedTexture2D::9002194625117951151::1711543069::1731865708::1::::<><>::
-wall-to-narrow.png::CompressedTexture2D::69062553458771231::1711543069::1731865708::1::::<><>::
-wall.png::CompressedTexture2D::3950875918753013217::1711543069::1731865708::1::::<><>::
-::res://Scenes/::1731875212
-CatRegiment.tscn::PackedScene::2507593317567513272::1731875154::0::1::::<><>::res://Scripts/CatReg.gd
-GridSystem.tscn::PackedScene::2101517985792705433::1731875154::0::1::::<><>::res://Scripts/GridSystem.gd<>res://Scripts/Row.gd<>res://Scripts/Square.gd
-placement_button.tscn::PackedScene::1197645401160800682::1731875154::0::1::::<><>::res://Scripts/placement_button.gd
-placement_system.tscn::PackedScene::8873198632003646213::1731875154::0::1::::<><>::res://Scripts/placement_system.gd
-player_ui.tscn::PackedScene::1161447635561273807::1731875154::0::1::::<><>::res://Scripts/player_ui.gd<>uid://rcfbr08x6gnq::::res://Scenes/placement_button.tscn<>uid://bwj3l4vb7abs0::::res://Assets/kenney_castle-kit/Previews/wall.png<>uid://homyvwp7g3wf::::res://Assets/kenney_castle-kit/Models/GLB format/wall.glb
-test_scene.tscn::PackedScene::3390527863620290519::1731875182::0::1::::<><>::uid://468xuqpurgrx::::res://Scenes/GridSystem.tscn<>res://Scripts/main_camera.gd<>uid://bbyxxwc60hi4w::::res://Scenes/CatRegiment.tscn<>uid://dyoijxsy0btqb::::res://Scenes/placement_system.tscn<>uid://qsu4xbha5uot::::res://Scenes/player_ui.tscn
-wall.tscn::PackedScene::9212126097266973347::1731875154::0::1::::<><>::uid://homyvwp7g3wf::::res://Assets/kenney_castle-kit/Models/GLB format/wall.glb
-::res://Scenes/Towers/::1731875207
-::res://Scenes/Troops/::1731875212
-::res://Scripts/::1731875182
-CatReg.gd::GDScript::-1::1731721926::0::1::::CatRegiment<>Node3D<>::
-GridSystem.gd::GDScript::-1::1731719534::0::1::::<>Node3D<>::
-main_camera.gd::GDScript::-1::1731867445::0::1::::<>Camera3D<>::
-placement_button.gd::GDScript::-1::1731874612::0::1::::<>Button<>::
-placement_system.gd::GDScript::-1::1731875182::0::1::::PlacementSystem<>Node3D<>::
-player_ui.gd::GDScript::-1::1731874578::0::1::::PlayerUi<>Node2D<>::
-Row.gd::GDScript::-1::1731719144::0::1::::<>Node3D<>::
-Square.gd::GDScript::-1::1731866195::0::1::::Square<>Node3D<>::
-Troop.gd::GDScript::-1::1731720827::0::1::::Troop<>RefCounted<>::
-Unit.gd::GDScript::-1::1731720540::0::1::::Unit<>RefCounted<>::
+::res://::1731893796
+icon.svg::CompressedTexture2D::5918118020451191775::1731710295::1731893796::1::::<><>::
+::res://Assets/::1731882379
+::res://Assets/kenney_castle-kit/::1731893796
+License.txt::TextFile::-1::1731882379::0::1::::<><>::
+Preview.png::CompressedTexture2D::6961123172950554875::1731882379::1731893796::1::::<><>::
+Sample.png::CompressedTexture2D::9093087415002335579::1731882379::1731893796::1::::<><>::
+::res://Assets/kenney_castle-kit/Models/::1731882379
+::res://Assets/kenney_castle-kit/Models/GLB format/::1731893816
+bridge-draw.glb::PackedScene::7934160349170514714::1731882379::1731893798::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+bridge-straight-pillar.glb::PackedScene::5597813423636832879::1731882379::1731893797::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+bridge-straight.glb::PackedScene::2036537551589488023::1731882379::1731893806::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+door.glb::PackedScene::2241750603759324509::1731882379::1731893800::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+flag-banner-long.glb::PackedScene::4151198082001635366::1731882379::1731893801::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+flag-banner-short.glb::PackedScene::3612866012111419198::1731882379::1731893802::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+flag-pennant.glb::PackedScene::3163903033161945292::1731882379::1731893803::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+flag-wide.glb::PackedScene::7162802165256527590::1731882379::1731893804::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+flag.glb::PackedScene::5374457324579123969::1731882379::1731893805::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+gate.glb::PackedScene::7297083494985282887::1731882379::1731893806::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+ground-hills.glb::PackedScene::1153474332922890459::1731882379::1731893807::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+ground.glb::PackedScene::8102494957385733393::1731882379::1731893808::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+metal-gate.glb::PackedScene::1833788460543059849::1731882379::1731893797::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+rocks-large.glb::PackedScene::7575739082012206436::1731882379::1731893797::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+rocks-small.glb::PackedScene::3248764306171437119::1731882379::1731893798::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+siege-ballista-demolished.glb::PackedScene::1825472809633359123::1731882379::1731893798::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+siege-ballista.glb::PackedScene::2208854250893023965::1731882379::1731893798::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+siege-catapult-demolished.glb::PackedScene::1007074604528852464::1731882379::1731893799::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+siege-catapult.glb::PackedScene::6147133809302806659::1731882379::1731893799::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+siege-ram-demolished.glb::PackedScene::2943130587694224998::1731882379::1731893800::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+siege-ram.glb::PackedScene::2236911926344308610::1731882379::1731893813::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+siege-tower-demolished.glb::PackedScene::3665048372714053362::1731882379::1731893813::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+siege-tower.glb::PackedScene::3618948125865539783::1731882379::1731893814::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+siege-trebuchet-demolished.glb::PackedScene::3630573163286311156::1731882379::1731893814::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+siege-trebuchet.glb::PackedScene::120917052084221357::1731882379::1731893814::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+stairs-stone-square.glb::PackedScene::5399251690656437428::1731882379::1731893814::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+stairs-stone.glb::PackedScene::6145483003832073029::1731882379::1731893815::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-base.glb::PackedScene::7058828407233654360::1731882379::1731893815::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-hexagon-base.glb::PackedScene::2984965514424042999::1731882379::1731893815::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-hexagon-mid.glb::PackedScene::505553475986034473::1731882379::1731893815::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-hexagon-roof-secondary.glb::PackedScene::5584505829733189062::1731882379::1731893816::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-hexagon-roof.glb::PackedScene::7849963362192600306::1731882379::1731893816::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-hexagon-top-wood.glb::PackedScene::8734040242289502313::1731882379::1731893809::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-hexagon-top.glb::PackedScene::1491244825269307513::1731882379::1731893810::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-slant-roof.glb::PackedScene::5989356993986794711::1731882379::1731893811::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-square-arch.glb::PackedScene::1557101220268015540::1731882379::1731893811::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-square-base-border.glb::PackedScene::6410513270290288981::1731882379::1731893811::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-square-base-color.glb::PackedScene::9051148287555028788::1731882379::1731893812::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-square-base.glb::PackedScene::5737587130114563354::1731882379::1731893812::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-square-mid-color.glb::PackedScene::465854946352330239::1731882379::1731893812::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-square-mid-door.glb::PackedScene::3821635054778093960::1731882379::1731893812::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-square-mid-open-simple.glb::PackedScene::4277120021413911546::1731882379::1731893813::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-square-mid-open.glb::PackedScene::7014030471329725175::1731882379::1731893813::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-square-mid-windows.glb::PackedScene::7208455912609133737::1731882379::1731893813::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-square-mid.glb::PackedScene::5930912063798289440::1731882379::1731893812::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-square-roof.glb::PackedScene::7576357615816380700::1731882379::1731893811::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-square-top-color.glb::PackedScene::63161874968947001::1731882379::1731893815::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-square-top-roof-high-windows.glb::PackedScene::673199656349958551::1731882379::1731893815::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-square-top-roof-high.glb::PackedScene::3446058357414429386::1731882379::1731893814::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-square-top-roof-rounded.glb::PackedScene::1865186653875261421::1731882379::1731893799::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-square-top-roof.glb::PackedScene::7597785471966101719::1731882379::1731893798::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-square-top.glb::PackedScene::1923169316039967562::1731882379::1731893807::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-square.glb::PackedScene::4180310404850736544::1731882379::1731893802::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tower-top.glb::PackedScene::7495700575154050038::1731882379::1731893809::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tree-large.glb::PackedScene::313008443572984037::1731882379::1731893798::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tree-log.glb::PackedScene::5134192069628615492::1731882379::1731893803::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tree-small.glb::PackedScene::2252640396203076301::1731882379::1731893801::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+tree-trunk.glb::PackedScene::796956689259136152::1731882379::1731893804::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+wall-corner-half-tower.glb::PackedScene::3626263650014210132::1731882379::1731893805::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+wall-corner-half.glb::PackedScene::444283669663894743::1731882379::1731893808::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+wall-corner-slant.glb::PackedScene::3450583420275804293::1731882379::1731893797::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+wall-corner.glb::PackedScene::4990318662749391358::1731882379::1731893798::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+wall-doorway.glb::PackedScene::2611840193694240595::1731882379::1731893799::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+wall-half-modular.glb::PackedScene::629797979589282208::1731882379::1731893799::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+wall-half.glb::PackedScene::1359290585070437790::1731882379::1731893813::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+wall-narrow-corner.glb::PackedScene::859830174726328973::1731882379::1731893814::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+wall-narrow-gate.glb::PackedScene::6817355993835867211::1731882379::1731893814::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+wall-narrow-stairs-rail.glb::PackedScene::295239049601150966::1731882379::1731893815::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+wall-narrow-stairs.glb::PackedScene::2830239328402691467::1731882379::1731893815::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+wall-narrow-wood-fence.glb::PackedScene::6891043395235444059::1731882379::1731893816::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+wall-narrow-wood.glb::PackedScene::8959531408666859119::1731882379::1731893810::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+wall-narrow.glb::PackedScene::409397849171063886::1731882379::1731893811::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+wall-pillar.glb::PackedScene::5653144718836515497::1731882379::1731893812::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+wall-stud.glb::PackedScene::5495097693566486886::1731882379::1731893812::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+wall-to-narrow.glb::PackedScene::1593272270965639341::1731882379::1731893812::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+wall.glb::PackedScene::520995794690591857::1731882379::1731893813::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+::res://Assets/kenney_castle-kit/Models/GLB format/Textures/::1731893820
+colormap.png::CompressedTexture2D::3442675857353050988::1731882379::1731893820::1::::<><>::
+::res://Assets/kenney_castle-kit/Models/Textures/::1731893795
+variation-a.png::CompressedTexture2D::8290765208489547299::1731882379::1731893795::1::::<><>::
+variation-b.png::CompressedTexture2D::2912902488581653528::1731882379::1731893795::1::::<><>::
+variation-c.png::CompressedTexture2D::424881476094601702::1731882379::1731893795::1::::<><>::
+variation-d.png::CompressedTexture2D::4406949759389090595::1731882379::1731893795::1::::<><>::
+variation-e.png::CompressedTexture2D::4008581452352859964::1731882379::1731893795::1::::<><>::
+variation-f.png::CompressedTexture2D::7359743881594545626::1731882379::1731893795::1::::<><>::
+variation-g.png::CompressedTexture2D::6352104355802513292::1731882379::1731893795::1::::<><>::
+::res://Assets/kenney_castle-kit/Previews/::1731893796
+bridge-draw.png::CompressedTexture2D::3228292544664817629::1731882379::1731893795::1::::<><>::
+bridge-straight-pillar.png::CompressedTexture2D::2618389518567208026::1731882379::1731893795::1::::<><>::
+bridge-straight.png::CompressedTexture2D::4126588008896589799::1731882379::1731893795::1::::<><>::
+door.png::CompressedTexture2D::6641082086842651369::1731882379::1731893795::1::::<><>::
+flag-banner-long.png::CompressedTexture2D::5533696373990396110::1731882379::1731893795::1::::<><>::
+flag-banner-short.png::CompressedTexture2D::2231187695938280723::1731882379::1731893795::1::::<><>::
+flag-pennant.png::CompressedTexture2D::2571689190562669102::1731882379::1731893795::1::::<><>::
+flag-wide.png::CompressedTexture2D::7822397268472525562::1731882379::1731893795::1::::<><>::
+flag.png::CompressedTexture2D::7453711866133400909::1731882379::1731893795::1::::<><>::
+gate.png::CompressedTexture2D::3941509163924625485::1731882379::1731893795::1::::<><>::
+ground-hills.png::CompressedTexture2D::1076026060916004562::1731882379::1731893795::1::::<><>::
+ground.png::CompressedTexture2D::95979084153552399::1731882379::1731893795::1::::<><>::
+metal-gate.png::CompressedTexture2D::5769681541773860030::1731882379::1731893795::1::::<><>::
+rocks-large.png::CompressedTexture2D::3050535879490663189::1731882379::1731893795::1::::<><>::
+rocks-small.png::CompressedTexture2D::3119560948270964016::1731882379::1731893795::1::::<><>::
+siege-ballista-demolished.png::CompressedTexture2D::8837430907812758515::1731882379::1731893795::1::::<><>::
+siege-ballista.png::CompressedTexture2D::8243356706723671178::1731882379::1731893795::1::::<><>::
+siege-catapult-demolished.png::CompressedTexture2D::2053396159515033308::1731882379::1731893795::1::::<><>::
+siege-catapult.png::CompressedTexture2D::774144279840345417::1731882379::1731893795::1::::<><>::
+siege-ram-demolished.png::CompressedTexture2D::2127081643860047289::1731882379::1731893795::1::::<><>::
+siege-ram.png::CompressedTexture2D::1635289987875993237::1731882379::1731893795::1::::<><>::
+siege-tower-demolished.png::CompressedTexture2D::3368946117048979291::1731882379::1731893795::1::::<><>::
+siege-tower.png::CompressedTexture2D::2631528514804802061::1731882379::1731893795::1::::<><>::
+siege-trebuchet-demolished.png::CompressedTexture2D::5141714660768218278::1731882379::1731893795::1::::<><>::
+siege-trebuchet.png::CompressedTexture2D::1512471299785008484::1731882379::1731893795::1::::<><>::
+stairs-stone-square.png::CompressedTexture2D::6706600987212125::1731882379::1731893796::1::::<><>::
+stairs-stone.png::CompressedTexture2D::8029005354569863389::1731882379::1731893796::1::::<><>::
+tower-base.png::CompressedTexture2D::7921486469719636554::1731882379::1731893796::1::::<><>::
+tower-hexagon-base.png::CompressedTexture2D::894994556825580434::1731882379::1731893796::1::::<><>::
+tower-hexagon-mid.png::CompressedTexture2D::6606907350087813874::1731882379::1731893796::1::::<><>::
+tower-hexagon-roof-secondary.png::CompressedTexture2D::6782628801607064340::1731882379::1731893796::1::::<><>::
+tower-hexagon-roof.png::CompressedTexture2D::8407483060784269312::1731882379::1731893796::1::::<><>::
+tower-hexagon-top-wood.png::CompressedTexture2D::6037785481088105530::1731882379::1731893796::1::::<><>::
+tower-hexagon-top.png::CompressedTexture2D::1424634055993682285::1731882379::1731893796::1::::<><>::
+tower-slant-roof.png::CompressedTexture2D::7541330313493113903::1731882379::1731893796::1::::<><>::
+tower-square-arch.png::CompressedTexture2D::2530821763740349350::1731882379::1731893796::1::::<><>::
+tower-square-base-border.png::CompressedTexture2D::86979708748039954::1731882379::1731893796::1::::<><>::
+tower-square-base-color.png::CompressedTexture2D::6430115887406638390::1731882379::1731893796::1::::<><>::
+tower-square-base.png::CompressedTexture2D::4977108253079460801::1731882379::1731893796::1::::<><>::
+tower-square-mid-color.png::CompressedTexture2D::1581984714530859332::1731882379::1731893796::1::::<><>::
+tower-square-mid-door.png::CompressedTexture2D::6022833653557053673::1731882379::1731893796::1::::<><>::
+tower-square-mid-open-simple.png::CompressedTexture2D::6940742848436717096::1731882379::1731893796::1::::<><>::
+tower-square-mid-open.png::CompressedTexture2D::3174902934295098460::1731882379::1731893796::1::::<><>::
+tower-square-mid-windows.png::CompressedTexture2D::8488920550761972477::1731882379::1731893796::1::::<><>::
+tower-square-mid.png::CompressedTexture2D::8172792390234975784::1731882379::1731893796::1::::<><>::
+tower-square-roof.png::CompressedTexture2D::8892759118694515098::1731882379::1731893796::1::::<><>::
+tower-square-top-color.png::CompressedTexture2D::4606062166045871121::1731882379::1731893796::1::::<><>::
+tower-square-top-roof-high-windows.png::CompressedTexture2D::8650543807895471454::1731882379::1731893796::1::::<><>::
+tower-square-top-roof-high.png::CompressedTexture2D::4660930670015619672::1731882379::1731893796::1::::<><>::
+tower-square-top-roof-rounded.png::CompressedTexture2D::7344168545080166992::1731882379::1731893796::1::::<><>::
+tower-square-top-roof.png::CompressedTexture2D::2827813087531875341::1731882379::1731893796::1::::<><>::
+tower-square-top.png::CompressedTexture2D::4150119910748071017::1731882379::1731893796::1::::<><>::
+tower-square.png::CompressedTexture2D::1807888718487078664::1731882379::1731893795::1::::<><>::
+tower-top.png::CompressedTexture2D::2871874643411227518::1731882379::1731893795::1::::<><>::
+tree-large.png::CompressedTexture2D::543388131704421758::1731882379::1731893795::1::::<><>::
+tree-log.png::CompressedTexture2D::4797424527408767714::1731882379::1731893795::1::::<><>::
+tree-small.png::CompressedTexture2D::5112094665610220822::1731882379::1731893795::1::::<><>::
+tree-trunk.png::CompressedTexture2D::7734974708000872878::1731882379::1731893795::1::::<><>::
+wall-corner-half-tower.png::CompressedTexture2D::2231495638509318141::1731882379::1731893795::1::::<><>::
+wall-corner-half.png::CompressedTexture2D::9093846349782806190::1731882379::1731893795::1::::<><>::
+wall-corner-slant.png::CompressedTexture2D::4404079997573252860::1731882379::1731893795::1::::<><>::
+wall-corner.png::CompressedTexture2D::3428806640603487086::1731882379::1731893795::1::::<><>::
+wall-doorway.png::CompressedTexture2D::5910254285820286729::1731882379::1731893795::1::::<><>::
+wall-half-modular.png::CompressedTexture2D::5663011354169230268::1731882379::1731893795::1::::<><>::
+wall-half.png::CompressedTexture2D::2449311392557589302::1731882379::1731893795::1::::<><>::
+wall-narrow-corner.png::CompressedTexture2D::4112209020491200199::1731882379::1731893795::1::::<><>::
+wall-narrow-gate.png::CompressedTexture2D::1743536417378524238::1731882379::1731893795::1::::<><>::
+wall-narrow-stairs-rail.png::CompressedTexture2D::6859391849139197548::1731882379::1731893795::1::::<><>::
+wall-narrow-stairs.png::CompressedTexture2D::1155682990907259497::1731882379::1731893795::1::::<><>::
+wall-narrow-wood-fence.png::CompressedTexture2D::2982893586312963685::1731882379::1731893795::1::::<><>::
+wall-narrow-wood.png::CompressedTexture2D::8412270628912690904::1731882379::1731893795::1::::<><>::
+wall-narrow.png::CompressedTexture2D::582396825883182673::1731882379::1731893795::1::::<><>::
+wall-pillar.png::CompressedTexture2D::6274816286180446210::1731882379::1731893795::1::::<><>::
+wall-stud.png::CompressedTexture2D::9002194625117951151::1731882379::1731893795::1::::<><>::
+wall-to-narrow.png::CompressedTexture2D::69062553458771231::1731882379::1731893796::1::::<><>::
+wall.png::CompressedTexture2D::3950875918753013217::1731882379::1731893796::1::::<><>::
+::res://Scenes/::1731893725
+CatRegiment.tscn::PackedScene::2507593317567513272::1731722023::0::1::::<><>::res://Scripts/CatReg.gd
+GridSystem.tscn::PackedScene::2101517985792705433::1731893725::0::1::::<><>::res://Scripts/GridSystem.gd<>res://Scripts/Row.gd<>res://Scripts/Square.gd
+placement_button.tscn::PackedScene::1197645401160800682::1731893725::0::1::::<><>::res://Scripts/placement_button.gd
+placement_system.tscn::PackedScene::8873198632003646213::1731893725::0::1::::<><>::res://Scripts/placement_system.gd
+player_ui.tscn::PackedScene::1161447635561273807::1731893725::0::1::::<><>::res://Scripts/player_ui.gd<>uid://rcfbr08x6gnq::::res://Scenes/placement_button.tscn<>uid://bwj3l4vb7abs0::::res://Assets/kenney_castle-kit/Previews/wall.png<>uid://homyvwp7g3wf::::res://Assets/kenney_castle-kit/Models/GLB format/wall.glb
+test_scene_sri.tscn::PackedScene::3253484571724197034::1731893846::0::1::::<><>::uid://qsu4xbha5uot::::res://Scenes/player_ui.tscn<>uid://dyoijxsy0btqb::::res://Scenes/placement_system.tscn<>res://Scripts/main_camera.gd<>uid://468xuqpurgrx::::res://Scenes/GridSystem.tscn<>uid://bbyxxwc60hi4w::::res://Scenes/CatRegiment.tscn
+test_scene.tscn::PackedScene::3390527863620290519::1731893725::0::1::::<><>::uid://468xuqpurgrx::::res://Scenes/GridSystem.tscn<>res://Scripts/main_camera.gd<>uid://bbyxxwc60hi4w::::res://Scenes/CatRegiment.tscn<>uid://dyoijxsy0btqb::::res://Scenes/placement_system.tscn<>uid://qsu4xbha5uot::::res://Scenes/player_ui.tscn
+wall.tscn::PackedScene::9212126097266973347::1731882379::0::1::::<><>::uid://homyvwp7g3wf::::res://Assets/kenney_castle-kit/Models/GLB format/wall.glb
+::res://Scripts/::1731893725
+CatReg.gd::GDScript::-1::1731722271::0::1::::CatRegiment<>Node3D<>::
+GridSystem.gd::GDScript::-1::1731722023::0::1::::<>Node3D<>::
+main_camera.gd::GDScript::-1::1731893725::0::1::::<>Camera3D<>::
+placement_button.gd::GDScript::-1::1731893725::0::1::::<>Button<>::
+placement_system.gd::GDScript::-1::1731893725::0::1::::PlacementSystem<>Node3D<>::
+player_ui.gd::GDScript::-1::1731893725::0::1::::PlayerUi<>Node2D<>::
+Row.gd::GDScript::-1::1731722023::0::1::::<>Node3D<>::
+Square.gd::GDScript::-1::1731893725::0::1::::Square<>Node3D<>::
+Troop.gd::GDScript::-1::1731722023::0::1::::Troop<>RefCounted<>::
+Unit.gd::GDScript::-1::1731722023::0::1::::Unit<>RefCounted<>::

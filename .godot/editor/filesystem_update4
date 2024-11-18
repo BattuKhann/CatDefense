@@ -1,10 +1,7 @@
-res://Scenes/player_ui.tscn
-res://Scenes/placement_button.tscn
 res://Scenes/test_scene.tscn
 res://Scenes/GridSystem.tscn
 res://Scenes/CatRegiment.tscn
 res://Scenes/wall.tscn
+res://Scenes/player_ui.tscn
 res://Scenes/placement_system.tscn
-res://Scripts/placement_system.gd
-res://Scripts/placement_button.gd
-res://Scripts/player_ui.gd
+res://Scenes/placement_button.tscn
