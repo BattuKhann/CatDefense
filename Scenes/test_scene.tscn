@@ -41,7 +41,7 @@ transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -
 shadow_enabled = true
 
 [node name="MainCamera" type="Camera3D" parent="."]
-transform = Transform3D(-4.2222e-08, -0.258819, 0.965926, -1.13133e-08, 0.965926, 0.258819, -1, 8.88178e-16, -4.37114e-08, 8, 4, 0)
+transform = Transform3D(-3.09087e-08, -0.707107, 0.707107, -3.09086e-08, 0.707107, 0.707107, -1, 4.26326e-14, -4.37114e-08, 10, 8, 0)
 script = ExtResource("1_omha8")
 
 [node name="GridSystem" parent="." instance=ExtResource("1_7muv2")]
