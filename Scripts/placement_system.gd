@@ -2,11 +2,22 @@ extends Node3D
 class_name PlacementSystem
 
 @onready var cam:Camera3D = $"../MainCamera"
+@onready var navRegion3d:NavigationRegion3D = $"../NavigationRegion3D"
 
 var RAYCAST_LENGTH = 1000
 var last_hovered_area: Area3D = null
 var selected: PackedScene = null
 var placing: Node3D = null
+
+func reloadNav():
+	if navRegion3d and navRegion3d.navigation_mesh:
+		navRegion3d.navigation_mesh.clear_baked_data()
+		navRegion3d.bake_navigation_mesh(true)
+	
+
+func _ready():
+	# debug
+	print("nav mesh is present from initilization")
 
 func selectObject(object: PackedScene):
 	if selected == object:
