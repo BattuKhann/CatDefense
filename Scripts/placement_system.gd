@@ -15,8 +15,9 @@ var error: StandardMaterial3D = preload("res://Materials/error_material.tres")
 
 func reloadNav():
 	if navRegion3d and navRegion3d.navigation_mesh:
-		navRegion3d.navigation_mesh.clear_baked_data()
+		navRegion3d.navigation_mesh.clear()
 		navRegion3d.bake_navigation_mesh(true)
+		print("updated navregion3d")
 	
 
 func _ready():
@@ -43,8 +44,10 @@ func placeObject():
 	if selected and canPlace:
 		var placed = selected.instantiate()
 		placed.global_position = Vector3(placing.global_position.x, 0, placing.global_position.z)
-		add_child(placed)
+		navRegion3d.add_child(placed)
 		co.tower = true
+		
+		reloadNav()
 	
 #Mose Movement
 func _physics_process(_delta):

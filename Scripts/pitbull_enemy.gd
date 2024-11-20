@@ -1,9 +1,9 @@
 extends CharacterBody3D
 
-const SPEED = 2.0
-const ACCEL = 8
+const SPEED = 6.0
+const ACCEL = 10
 
-@export var DAMAGE = 50
+@export var DAMAGE = 15
 
 @onready var navigation_agent_3d = $NavigationAgent3D
 @onready var sprite3d = $Sprite3D

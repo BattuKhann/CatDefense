@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731982789
+::res://::1732066086
 icon.svg::CompressedTexture2D::5918118020451191775::1731710295::1731893796::1::::<><>::
 ::res://Assets/::1731882379
 ::res://Assets/kenney_castle-kit/::1731893796
@@ -171,25 +171,27 @@ wall-pillar.png::CompressedTexture2D::6274816286180446210::1731882379::173189379
 wall-stud.png::CompressedTexture2D::9002194625117951151::1731882379::1731893795::1::::<><>::
 wall-to-narrow.png::CompressedTexture2D::69062553458771231::1731882379::1731893796::1::::<><>::
 wall.png::CompressedTexture2D::3950875918753013217::1731882379::1731893796::1::::<><>::
-::res://Scenes/::1731982724
-CatRegiment.tscn::PackedScene::2507593317567513272::1731982627::0::1::::<><>::res://Scripts/CatReg.gd
-doberman_enemy.tscn::PackedScene::5665065537326902853::1731982628::0::1::::<><>::res://Scripts/doberman_enemy.gd
-GridSystem.tscn::PackedScene::2101517985792705433::1731982627::0::1::::<><>::res://Scripts/GridSystem.gd<>res://Scripts/Row.gd<>res://Scripts/Square.gd
-placement_button.tscn::PackedScene::1197645401160800682::1731982627::0::1::::<><>::res://Scripts/placement_button.gd
+::res://Materials/::1732066008
+error_material.tres::StandardMaterial3D::6017914273947640220::1732066008::0::1::::<><>::
+::res://Scenes/::1732068955
+CatRegiment.tscn::PackedScene::2507593317567513272::1732068955::0::1::::<><>::res://Scripts/CatReg.gd
+doberman_enemy.tscn::PackedScene::7374544796172048673::1732069328::0::1::::<><>::res://Scripts/doberman_enemy.gd
+GridSystem.tscn::PackedScene::2101517985792705433::1732068955::0::1::::<><>::res://Scripts/GridSystem.gd<>res://Scripts/Row.gd<>res://Scripts/Square.gd
+placement_button.tscn::PackedScene::1197645401160800682::1732068955::0::1::::<><>::res://Scripts/placement_button.gd
 placement_system.tscn::PackedScene::8873198632003646213::1731982627::0::1::::<><>::res://Scripts/placement_system.gd
-player_ui.tscn::PackedScene::1161447635561273807::1731982627::0::1::::<><>::res://Scripts/player_ui.gd<>uid://rcfbr08x6gnq::::res://Scenes/placement_button.tscn<>uid://bwj3l4vb7abs0::::res://Assets/kenney_castle-kit/Previews/wall.png<>uid://homyvwp7g3wf::::res://Assets/kenney_castle-kit/Models/GLB format/wall.glb
-test_scene.tscn::PackedScene::3390527863620290519::1731982627::0::1::::<><>::uid://468xuqpurgrx::::res://Scenes/GridSystem.tscn<>res://Scripts/main_camera.gd<>uid://bbyxxwc60hi4w::::res://Scenes/CatRegiment.tscn<>uid://dyoijxsy0btqb::::res://Scenes/placement_system.tscn<>uid://qsu4xbha5uot::::res://Scenes/player_ui.tscn
-test_scene_sri.tscn::PackedScene::3253484571724197034::1731982724::0::1::::<><>::uid://qsu4xbha5uot::::res://Scenes/player_ui.tscn<>uid://dyoijxsy0btqb::::res://Scenes/placement_system.tscn<>res://Scripts/main_camera.gd<>uid://468xuqpurgrx::::res://Scenes/GridSystem.tscn<>uid://bbyxxwc60hi4w::::res://Scenes/CatRegiment.tscn
-wall.tscn::PackedScene::9212126097266973347::1731982627::0::1::::<><>::uid://homyvwp7g3wf::::res://Assets/kenney_castle-kit/Models/GLB format/wall.glb
-::res://Scripts/::1731982722
+player_ui.tscn::PackedScene::1161447635561273807::1732068955::0::1::::<><>::res://Scripts/player_ui.gd<>uid://rcfbr08x6gnq::::res://Scenes/placement_button.tscn<>uid://bwj3l4vb7abs0::::res://Assets/kenney_castle-kit/Previews/wall.png<>uid://homyvwp7g3wf::::res://Assets/kenney_castle-kit/Models/GLB format/wall.glb
+test_scene.tscn::PackedScene::3390527863620290519::1732068954::0::1::::<><>::uid://468xuqpurgrx::::res://Scenes/GridSystem.tscn<>res://Scripts/main_camera.gd<>uid://bbyxxwc60hi4w::::res://Scenes/CatRegiment.tscn<>uid://dyoijxsy0btqb::::res://Scenes/placement_system.tscn<>uid://qsu4xbha5uot::::res://Scenes/player_ui.tscn
+test_scene_sri.tscn::PackedScene::3253484571724197034::1732069094::0::1::::<><>::uid://qsu4xbha5uot::::res://Scenes/player_ui.tscn<>uid://dyoijxsy0btqb::::res://Scenes/placement_system.tscn<>res://Scripts/main_camera.gd<>uid://468xuqpurgrx::::res://Scenes/GridSystem.tscn<>uid://bbyxxwc60hi4w::::res://Scenes/CatRegiment.tscn
+wall.tscn::PackedScene::9212126097266973347::1732068955::0::1::::<><>::uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
+::res://Scripts/::1732068953
 CatReg.gd::GDScript::-1::1731722271::0::1::::CatRegiment<>Node3D<>::
-doberman_enemy.gd::GDScript::-1::1731982026::0::1::::<>CharacterBody3D<>::
+doberman_enemy.gd::GDScript::-1::1732069326::0::1::::<>CharacterBody3D<>::
 GridSystem.gd::GDScript::-1::1731722023::0::1::::<>Node3D<>::
 main_camera.gd::GDScript::-1::1731893725::0::1::::<>Camera3D<>::
 placement_button.gd::GDScript::-1::1731893725::0::1::::<>Button<>::
-placement_system.gd::GDScript::-1::1731982722::0::1::::PlacementSystem<>Node3D<>::
+placement_system.gd::GDScript::-1::1732068953::0::1::::PlacementSystem<>Node3D<>::
 player_ui.gd::GDScript::-1::1731893725::0::1::::PlayerUi<>Node2D<>::
 Row.gd::GDScript::-1::1731722023::0::1::::<>Node3D<>::
-Square.gd::GDScript::-1::1731893725::0::1::::Square<>Node3D<>::
+Square.gd::GDScript::-1::1732066008::0::1::::Square<>Node3D<>::
 Troop.gd::GDScript::-1::1731722023::0::1::::Troop<>RefCounted<>::
 Unit.gd::GDScript::-1::1731722023::0::1::::Unit<>RefCounted<>::

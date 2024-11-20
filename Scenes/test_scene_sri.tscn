@@ -36,9 +36,6 @@ size = Vector2(20, 20)
 
 [node name="Player UI" parent="." instance=ExtResource("1_8lppw")]
 
-[node name="PlacementSystem" parent="." instance=ExtResource("2_tduuc")]
-transform = Transform3D(1, 0, 1.77636e-14, 0, 1, 4.44089e-15, -1.06581e-14, -2.66454e-15, 1, 2.38419e-06, 2.14577e-06, 1.13687e-13)
-
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_djsex")
 
@@ -63,3 +60,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.02, 0)
 [node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D"]
 mesh = SubResource("PlaneMesh_evq3w")
 skeleton = NodePath("../..")
+
+[node name="PlacementSystem" parent="." instance=ExtResource("2_tduuc")]
+transform = Transform3D(1, 0, 1.77636e-14, 0, 1, 4.44089e-15, -1.06581e-14, -2.66454e-15, 1, 2.38419e-06, 2.14577e-06, 1.13687e-13)

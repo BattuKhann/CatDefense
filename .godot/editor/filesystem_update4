@@ -1,11 +1,11 @@
+res://Scenes/test_scene_sri.tscn
 res://Scenes/test_scene.tscn
 res://Scenes/GridSystem.tscn
 res://Scenes/CatRegiment.tscn
 res://Scenes/wall.tscn
 res://Scenes/player_ui.tscn
-res://Scenes/placement_system.tscn
 res://Scenes/placement_button.tscn
-res://Scripts/placement_system.gd
 res://Scenes/doberman_enemy.tscn
-res://Scripts/Square.gd
-res://Materials/error_material.tres
+res://Scripts/placement_system.gd
+res://Scripts/doberman_enemy.gd
+res://Scripts/pitbull_enemy.gd
