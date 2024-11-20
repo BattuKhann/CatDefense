@@ -1,7 +1,7 @@
 class_name Square extends Node3D
 
 var regiment:CatRegiment
-var tower
+var tower: bool = false
 var enemy
 
 

@@ -8,6 +8,10 @@ var RAYCAST_LENGTH = 1000
 var last_hovered_area: Area3D = null
 var selected: PackedScene = null
 var placing: Node3D = null
+var canPlace: bool = true
+var co: CollisionObject3D
+
+var error: StandardMaterial3D = preload("res://Materials/error_material.tres")
 
 func reloadNav():
 	if navRegion3d and navRegion3d.navigation_mesh:
@@ -22,12 +26,26 @@ func _ready():
 func selectObject(object: PackedScene):
 	if selected == object:
 		selected = null
+		if placing:
+			placing.free()
 		placing = null
 	else:
+		selected = null
+		if placing:
+			placing.free()
+		placing = null
 		selected = object
 		placing = selected.instantiate()
 		add_child(placing)
 		
+func placeObject():
+	print("hi")
+	if selected and canPlace:
+		var placed = selected.instantiate()
+		placed.global_position = Vector3(placing.global_position.x, 0, placing.global_position.z)
+		add_child(placed)
+		co.tower = true
+	
 #Mose Movement
 func _physics_process(_delta):
 	var space_state = get_world_3d().direct_space_state
@@ -39,7 +57,7 @@ func _physics_process(_delta):
 	var rayResult:Dictionary = space_state.intersect_ray(query)
 	
 	if rayResult.size() > 0:
-		var co:CollisionObject3D = rayResult.get("collider")
+		co = rayResult.get("collider")
 		
 		if co and co is Area3D:
 			if last_hovered_area != co:
@@ -51,12 +69,15 @@ func _physics_process(_delta):
 				_highlight(co, true)
 		if placing:
 			placing.global_position = Vector3(co.global_position.x, 0.2, co.global_position.z)
+			canPlace = !co.tower
+			var mesh: MeshInstance3D = placing.get_child(0)
+			if !canPlace:
+				mesh.set_surface_override_material(0, error)
+			else:
+				mesh.set_surface_override_material(0, null)
 		
 	elif last_hovered_area:
 		_highlight(last_hovered_area, false)
-	
-	
-	
 
 func _highlight(area: Area3D, highlight: bool):
 	var mesh_instance = area.find_child("MeshInstance3D")  # Replace with your node path
@@ -69,3 +90,8 @@ func _highlight(area: Area3D, highlight: bool):
 			mesh_instance.set_surface_override_material(0, material)
 		else:
 			mesh_instance.set_surface_override_material(0, null)
+			
+func _input(event):
+	if event is InputEventMouseButton:
+		if not event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+			placeObject()
