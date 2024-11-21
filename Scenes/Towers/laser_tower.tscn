@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://ddo24ebk03i2v"]
+
+[ext_resource type="PackedScene" uid="uid://bir67fqgprcfn" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-hexagon-base.glb" id="1_n54tu"]
+[ext_resource type="PackedScene" uid="uid://nunaesikksxu" path="res://Assets/Towers/laser_pointer.glb" id="2_kxe1x"]
+[ext_resource type="PackedScene" uid="uid://dvj28a05aryxr" path="res://Scenes/Towers/laser_beam.tscn" id="5_4i18o"]
+
+[node name="LaserTower" type="Node3D"]
+
+[node name="tower-hexagon-base2" parent="." instance=ExtResource("1_n54tu")]
+
+[node name="LaserPointer" parent="." instance=ExtResource("2_kxe1x")]
+transform = Transform3D(0.001, 0, 0, 0, 0.001, 0, 0, 0, 0.001, 0, 1.4, 0)
+
+[node name="LaserBeam" parent="." instance=ExtResource("5_4i18o")]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -0.4, 1.4, 0)
+target_position = Vector3(0, -100, 0)
