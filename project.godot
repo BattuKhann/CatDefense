@@ -22,4 +22,5 @@ project/assembly_name="CatKingdom"
 [global_group]
 
 enemy="dog enemy group"
-tower="cat troop"
+tower_wall="wall group part of tower group"
+tower_group="cat troop"

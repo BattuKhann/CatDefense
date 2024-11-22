@@ -22,12 +22,10 @@ var target: Node3D = null
 func findCam():
 	camera3d = get_tree().root.find_child("MainCamera", true, false)
 
-
-
 func hurt(damage):
 	health -= damage
 
-func isDead():
+func isDead() -> bool:
 	return health <= 0
 
 func _ready():
@@ -90,7 +88,7 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 	
-	if isDead():
+	if self.isDead():
 		queue_free()
 	
 	if target:

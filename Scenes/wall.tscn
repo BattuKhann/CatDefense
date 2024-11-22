@@ -1,5 +1,6 @@
-[gd_scene load_steps=11 format=4 uid="uid://d4iomu1ndb7ch"]
+[gd_scene load_steps=12 format=4 uid="uid://d4iomu1ndb7ch"]
 
+[ext_resource type="Script" path="res://Scripts/wall.gd" id="1_l1eni"]
 [ext_resource type="Texture2D" uid="uid://bpbwmr4f8dhu7" path="res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png" id="1_yp3je"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sapjh"]
@@ -117,6 +118,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_r8gf2")
 
 [node name="Wall" type="Node3D"]
+script = ExtResource("1_l1eni")
 
 [node name="Wall" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)

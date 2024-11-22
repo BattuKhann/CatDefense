@@ -9,7 +9,7 @@ const ACCEL = 8
 
 @export var damage: int = 10  # Damage dealt by this enemy
 @export var attack_range: float = 15.0  # Range within which the enemy will attack
-@export var attack_interval: float = 5.0  # Time between consecutive attacks
+@export var attack_interval: float = 0.5  # Time between consecutive attacks
 
 var attack_timer = 0.0  # Tracks time since last attack 
 
@@ -21,13 +21,16 @@ var characters_in_range = []
 
 var target: Node3D = null
 
+func choose_25_chance() -> bool:
+	return randf() < 0.25
+
 func findCam():
 	camera3d = get_tree().root.find_child("MainCamera", true, false)
 
 func hurt(damage: int):
 	health -= damage
 
-func isDead():
+func isDead() -> bool:
 	return health <= 0
 
 func _ready():
@@ -42,15 +45,22 @@ func _ready():
 		findCam()
 
 func find_target():
-	# Get the nearest object in the group "troop"
+	# Get the nearest object in the group "tower"
 	var nearest_distance = 1000
 	var nearest_target = null
 
-	for member in get_tree().get_nodes_in_group("tower"):
+	for member in get_tree().get_nodes_in_group("tower_group"):
 		# Ensure the member is a valid Node3D and not this object
 		if is_instance_valid(member) and member is Node3D and member != self:
 			var distance = global_transform.origin.distance_to(member.global_transform.origin)
-			if distance < nearest_distance:
+			
+			if member.is_in_group("tower_wall") and choose_25_chance():
+				# 25% chance to prioritize "tower_wall" targets
+				nearest_target = member
+				nearest_distance = distance
+				if not characters_in_range.has(member):
+					characters_in_range.append(member)
+			elif distance < nearest_distance:
 				nearest_distance = distance
 				nearest_target = member
 
@@ -80,22 +90,28 @@ func _process(delta):
 		hurt_nearby_characters()
 
 func hurt_nearby_characters():
+	# Create a new array to hold valid characters
+	var valid_characters = []
 	for char in characters_in_range:
-		char.hurt(DAMAGE)
+		if is_instance_valid(char):
+			var custom_char = char as Node3D  # Replace Node3D with the appropriate custom type if needed
+			if custom_char and custom_char.has_method("hurt"):
+				custom_char.hurt(DAMAGE)
+				valid_characters.append(char)
+	# Update the list with only valid characters
+	characters_in_range = valid_characters
 
 func _physics_process(delta):
 	rotateSprite()
 	
-	for child in get_tree().get_nodes_in_group("tower"):
+	for child in get_tree().get_nodes_in_group("tower_group"):
 		if child != self:
 			# Calculate distance
 			var distance = global_transform.origin.distance_to(child.global_transform.origin)
 			
 			if distance <= attack_range:
-				characters_in_range.append(child)
-	
-	#for i in characters_in_range:
-		#print(i)
+				if not characters_in_range.has(child):
+					characters_in_range.append(child)
 	
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -128,6 +144,8 @@ func _physics_process(delta):
 		sprite3d.play("idle")
 		velocity.x = move_toward(velocity.x, 0, ACCEL * delta)
 		velocity.z = move_toward(velocity.z, 0, ACCEL * delta)
+		
+		find_target()
 		move_and_slide()
 
 func _on_Target_exited():

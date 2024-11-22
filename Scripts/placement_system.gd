@@ -44,6 +44,8 @@ func placeObject():
 	if selected and canPlace:
 		var placed = selected.instantiate()
 		placed.global_position = Vector3(placing.global_position.x, 0, placing.global_position.z)
+		placed.add_to_group("tower_group")
+		placed.add_to_group("tower_wall")
 		navRegion3d.add_child(placed)
 		co.tower = true
 		
