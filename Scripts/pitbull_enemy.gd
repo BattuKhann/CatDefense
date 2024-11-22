@@ -119,7 +119,8 @@ func hurt_nearby_characters():
 			sprite3d.play("attack")
 			
 			if char and char is Wall and char.has_method("hurt"):
-				char.hurt(DAMAGE)
+				if !isDead():
+					char.hurt(DAMAGE)
 			
 	# Update the list with only valid characters
 	characters_in_range = valid_characters
