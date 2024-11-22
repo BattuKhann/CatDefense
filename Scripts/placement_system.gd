@@ -72,7 +72,7 @@ func _physics_process(_delta):
 				# Set the new hovered area
 				last_hovered_area = co
 				_highlight(co, true)
-		if placing:
+		if co and co is Area3D and placing:
 			placing.global_position = Vector3(co.global_position.x, 0.2, co.global_position.z)
 			canPlace = !co.tower
 			var mesh: MeshInstance3D = placing.get_child(0)
