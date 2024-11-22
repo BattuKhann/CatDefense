@@ -1,19 +1,134 @@
-[gd_scene load_steps=4 format=3 uid="uid://ddcjw7yj3wj4t"]
+[gd_scene load_steps=19 format=3 uid="uid://ddcjw7yj3wj4t"]
 
 [ext_resource type="Script" path="res://Scripts/doberman_enemy.gd" id="1_yjlub"]
-[ext_resource type="Texture2D" uid="uid://dpmxfc06ekikk" path="res://Assets/Testing_sprite/weirdal.jpg" id="2_wf58g"]
+[ext_resource type="Texture2D" uid="uid://q713p5h7wbmu" path="res://Assets/Pixel Dogs-Sprites/Dogs-Remastered-01.png" id="2_63as6"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0ea0r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qxwln"]
+atlas = ExtResource("2_63as6")
+region = Rect2(0, 0, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pa11c"]
+atlas = ExtResource("2_63as6")
+region = Rect2(64, 0, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_10bsy"]
+atlas = ExtResource("2_63as6")
+region = Rect2(128, 0, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ytatu"]
+atlas = ExtResource("2_63as6")
+region = Rect2(192, 0, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oqrd4"]
+atlas = ExtResource("2_63as6")
+region = Rect2(256, 0, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y8bcg"]
+atlas = ExtResource("2_63as6")
+region = Rect2(320, 0, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cy5a8"]
+atlas = ExtResource("2_63as6")
+region = Rect2(0, 144, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jcv6d"]
+atlas = ExtResource("2_63as6")
+region = Rect2(64, 144, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_svvof"]
+atlas = ExtResource("2_63as6")
+region = Rect2(128, 144, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v88of"]
+atlas = ExtResource("2_63as6")
+region = Rect2(192, 144, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8xq6e"]
+atlas = ExtResource("2_63as6")
+region = Rect2(256, 144, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5dvsq"]
+atlas = ExtResource("2_63as6")
+region = Rect2(320, 144, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ytuak"]
+atlas = ExtResource("2_63as6")
+region = Rect2(384, 144, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_de8ub"]
+atlas = ExtResource("2_63as6")
+region = Rect2(448, 144, 64, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d4h02"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qxwln")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pa11c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_10bsy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ytatu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oqrd4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y8bcg")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cy5a8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jcv6d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_svvof")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v88of")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8xq6e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5dvsq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ytuak")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_de8ub")
+}],
+"loop": true,
+"name": &"running",
+"speed": 15.0
+}]
 
 [node name="DobermanEnemy" type="CharacterBody3D"]
 script = ExtResource("1_yjlub")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
 shape = SubResource("CapsuleShape3D_0ea0r")
 
-[node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
-texture = ExtResource("2_wf58g")
+[node name="Sprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0.3, 0)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_d4h02")
+animation = &"running"
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+path_max_distance = 100.01
 height = 2.0

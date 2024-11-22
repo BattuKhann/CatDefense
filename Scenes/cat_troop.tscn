@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdgb7mofs4jyw"]
+
+[ext_resource type="Script" path="res://Scripts/cat_troop.gd" id="1_14can"]
+[ext_resource type="Texture2D" uid="uid://b61un3yhgxkr3" path="res://Assets/Testing_sprite/HankHill.png" id="2_bgs5i"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0ea0r"]
+
+[node name="CatTroop" type="CharacterBody3D"]
+script = ExtResource("1_14can")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_0ea0r")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+texture = ExtResource("2_bgs5i")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+path_max_distance = 100.01
+height = 2.0

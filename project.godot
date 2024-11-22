@@ -18,3 +18,8 @@ config/icon="res://icon.svg"
 [dotnet]
 
 project/assembly_name="CatKingdom"
+
+[global_group]
+
+enemy="dog enemy group"
+tower="cat troop"

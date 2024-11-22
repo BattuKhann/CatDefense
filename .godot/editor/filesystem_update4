@@ -1,5 +1,3 @@
-res://Scenes/doberman_enemy.tscn
-res://Scripts/PointSpriteToCamera.gd
 res://Scenes/test_scene_sri.tscn
 res://Scenes/test_scene.tscn
 res://Scenes/GridSystem.tscn
@@ -7,4 +5,7 @@ res://Scenes/CatRegiment.tscn
 res://Scenes/wall.tscn
 res://Scenes/player_ui.tscn
 res://Scenes/placement_button.tscn
+res://Scenes/doberman_enemy.tscn
+res://Scenes/cat_troop.tscn
+res://Scripts/cat_troop.gd
 res://Scripts/doberman_enemy.gd
