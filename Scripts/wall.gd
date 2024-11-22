@@ -1,9 +1,11 @@
 extends Node3D
+class_name Wall
 
-@export var health = 500
+@export var health = 300
 
 func hurt(damage):
 	health -= damage
+	print("wall health: ", health)
 
 func isDead() -> bool:
 	return health <= 0

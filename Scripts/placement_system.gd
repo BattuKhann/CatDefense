@@ -41,11 +41,14 @@ func selectObject(object: PackedScene):
 		
 func placeObject():
 	print("hi")
-	if selected and canPlace:
+	if selected and canPlace and co is Area3D:
 		var placed = selected.instantiate()
 		placed.global_position = Vector3(placing.global_position.x, 0, placing.global_position.z)
 		placed.add_to_group("tower_group")
 		placed.add_to_group("tower_wall")
+		if placed.get_script() == null:
+			print("Script missing; attaching manually!")
+			placed.set_script(preload("res://Scripts/wall.gd"))
 		navRegion3d.add_child(placed)
 		co.tower = true
 		

@@ -24,6 +24,7 @@ func findCam():
 
 func hurt(damage):
 	health -= damage
+	print("cat health: ", health)
 
 func isDead() -> bool:
 	return health <= 0
@@ -81,8 +82,8 @@ func hurt_nearby_characters():
 			char.hurt(damage)
 
 func _physics_process(delta):
-	print("troop hp: ")
-	print(self.health)
+	#print("troop hp: ")
+	#print(self.health)
 	rotateSprite()
 	
 	if not is_on_floor():

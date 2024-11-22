@@ -5,10 +5,10 @@ const ACCEL = 8
 
 @export var DAMAGE = 10
 @export var camera3d: Camera3D
-@export var health = 100
+@export var health = 300
 
 @export var damage: int = 10  # Damage dealt by this enemy
-@export var attack_range: float = 15.0  # Range within which the enemy will attack
+@export var attack_range: float = 2 # Range within which the enemy will attack
 @export var attack_interval: float = 0.5  # Time between consecutive attacks
 
 var attack_timer = 0.0  # Tracks time since last attack 
@@ -18,8 +18,22 @@ var attack_timer = 0.0  # Tracks time since last attack
 
 var root
 var characters_in_range = []
+var attacking = false
 
 var target: Node3D = null
+
+func _on_animation_finished():
+	if sprite3d.animation == "attack":
+		attacking = false
+		sprite3d.stop()
+		
+		if isDead():
+			sprite3d.play("death")
+		
+		if target:  # Check if the enemy still has a target
+			sprite3d.play("running")
+		else:
+			sprite3d.play("idle")
 
 func choose_25_chance() -> bool:
 	return randf() < 0.25
@@ -29,6 +43,7 @@ func findCam():
 
 func hurt(damage: int):
 	health -= damage
+	sprite3d.play("hurt")
 
 func isDead() -> bool:
 	return health <= 0
@@ -39,14 +54,18 @@ func _ready():
 	find_target()
 	camera3d = get_node_or_null("../MainCamera")
 	
+	if sprite3d.has_signal("animation_finished"):
+		sprite3d.connect("animation_finished", Callable(self, "_on_animation_finished"))
+	
 	if camera3d:
 		print("found camera")
 	else:
 		findCam()
 
 func find_target():
+	target = null
 	# Get the nearest object in the group "tower"
-	var nearest_distance = 1000
+	var nearest_distance = 100
 	var nearest_target = null
 
 	for member in get_tree().get_nodes_in_group("tower_group"):
@@ -83,7 +102,13 @@ func _on_target_exited():
 	print("Target exited the scene.")
 	target = null
 
-func _process(delta):
+#func _process(delta):
+	#attack_timer += delta
+	#if attack_timer >= attack_interval:
+		#attack_timer = 0.0
+		#hurt_nearby_characters()
+		
+func test(delta):
 	attack_timer += delta
 	if attack_timer >= attack_interval:
 		attack_timer = 0.0
@@ -94,12 +119,21 @@ func hurt_nearby_characters():
 	var valid_characters = []
 	for char in characters_in_range:
 		if is_instance_valid(char):
-			var custom_char = char as Node3D  # Replace Node3D with the appropriate custom type if needed
-			if custom_char and custom_char.has_method("hurt"):
-				custom_char.hurt(DAMAGE)
-				valid_characters.append(char)
+			attacking = true
+			sprite3d.stop()
+			valid_characters.append(char)
+			
+			sprite3d.play("attack")
+			
+			if char and char is Node3D and char.has_method("hurt"):
+				char.hurt(DAMAGE)
+			elif char and char is Wall and char.has_method("hurt"):
+				char.hurt(DAMAGE)
+			
 	# Update the list with only valid characters
 	characters_in_range = valid_characters
+	print(characters_in_range)
+	print("dog health: ", health)
 
 func _physics_process(delta):
 	rotateSprite()
@@ -117,31 +151,37 @@ func _physics_process(delta):
 		velocity += get_gravity() * delta
 	
 	if isDead():
-		queue_free()
+		sprite3d.play("death")
+		if !sprite3d.is_playing():
+			queue_free()
 	
 	if target:
-		sprite3d.play("running")
+		if !attacking:
+			sprite3d.play("running")
+		
 		# Update the NavigationAgent3D's target position if the target moves
 		navigation_agent_3d.target_position = target.global_transform.origin
-
+		
 		# Calculate the next path position to move toward
 		var next_position = navigation_agent_3d.get_next_path_position()
 		var direction = (next_position - global_transform.origin).normalized()
 		
 		var distance = global_transform.origin.distance_to(target.global_transform.origin)
-		if distance < 15:
+		if distance < 3:
 			velocity.x = move_toward(velocity.x, 0, ACCEL * delta)
 			velocity.z = move_toward(velocity.z, 0, ACCEL * delta)
+			test(delta)
 			move_and_slide()
-
+			
 		# Apply movement
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
-
 		move_and_slide()
 	else:
 		# If no target, stop movement
-		sprite3d.play("idle")
+		if !attacking:
+			sprite3d.play("idle")
+		
 		velocity.x = move_toward(velocity.x, 0, ACCEL * delta)
 		velocity.z = move_toward(velocity.z, 0, ACCEL * delta)
 		
@@ -167,4 +207,4 @@ func rotateSprite():
 	rotation_degrees = Vector3(rad_to_deg(current_pitch), rad_to_deg(target_yaw), 0)
 	# Optionally handle horizontal flipping based on the camera's relative position
 	var right_dot = to_camera.dot(camera3d.transform.basis.x)
-	sprite3d.flip_h = right_dot > 0
+	sprite3d.flip_h = right_dot < 0
