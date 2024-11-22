@@ -177,7 +177,7 @@ animations = [{
 "speed": 15.0
 }]
 
-[node name="DobermanEnemy" type="CharacterBody3D"]
+[node name="DobermanEnemy" type="CharacterBody3D" groups=["enemy"]]
 script = ExtResource("1_yjlub")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]

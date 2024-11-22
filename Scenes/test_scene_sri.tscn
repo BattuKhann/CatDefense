@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://bmmaoena1sj2a"]
+[gd_scene load_steps=16 format=3 uid="uid://bmmaoena1sj2a"]
 
 [ext_resource type="PackedScene" uid="uid://qsu4xbha5uot" path="res://Scenes/player_ui.tscn" id="1_8lppw"]
 [ext_resource type="PackedScene" uid="uid://dyoijxsy0btqb" path="res://Scenes/placement_system.tscn" id="2_tduuc"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bbyxxwc60hi4w" path="res://Scenes/CatRegiment.tscn" id="5_qi2vj"]
 [ext_resource type="PackedScene" uid="uid://ddcjw7yj3wj4t" path="res://Scenes/doberman_enemy.tscn" id="6_0c6lx"]
 [ext_resource type="PackedScene" uid="uid://cdgb7mofs4jyw" path="res://Scenes/cat_troop.tscn" id="7_0hsem"]
+[ext_resource type="PackedScene" uid="uid://cqncun3qeaiy1" path="res://Scenes/pitbull_enemy.tscn" id="8_owuqj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_sk0j4"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -76,8 +77,11 @@ transform = Transform3D(1, 0, 1.77636e-14, 0, 1, 4.44089e-15, -1.06581e-14, -2.6
 
 [node name="TestingNode" type="Node3D" parent="."]
 
-[node name="DobermanEnemy" parent="TestingNode" groups=["enemy"] instance=ExtResource("6_0c6lx")]
+[node name="DobermanEnemy" parent="TestingNode" instance=ExtResource("6_0c6lx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, -3)
 
-[node name="CatTroop" parent="TestingNode" groups=["tower", "tower_group"] instance=ExtResource("7_0hsem")]
+[node name="CatTroop" parent="TestingNode" instance=ExtResource("7_0hsem")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 7, 3)
+
+[node name="PitbullEnemy" parent="TestingNode" instance=ExtResource("8_owuqj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 4)

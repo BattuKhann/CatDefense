@@ -117,7 +117,7 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_r8gf2")
 
-[node name="Wall" type="Node3D"]
+[node name="Wall" type="Node3D" groups=["tower_group", "tower_wall"]]
 script = ExtResource("1_l1eni")
 
 [node name="Wall" type="MeshInstance3D" parent="."]

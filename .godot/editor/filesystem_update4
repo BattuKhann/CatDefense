@@ -11,3 +11,5 @@ res://Scripts/doberman_enemy.gd
 res://Scripts/placement_system.gd
 res://Scripts/wall.gd
 res://Scripts/cat_troop.gd
+res://Scripts/pitbull_enemy.gd
+res://Scenes/pitbull_enemy.tscn

@@ -1,0 +1,221 @@
+[gd_scene load_steps=29 format=3 uid="uid://cqncun3qeaiy1"]
+
+[ext_resource type="Script" path="res://Scripts/pitbull_enemy.gd" id="1_qoo3u"]
+[ext_resource type="Texture2D" uid="uid://bqo8xwot5ow4h" path="res://Assets/Pixel Dogs-Sprites/Dogs-Remastered-16.png" id="6_68yrw"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0ea0r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ohu61"]
+atlas = ExtResource("6_68yrw")
+region = Rect2(0, 288, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l62sb"]
+atlas = ExtResource("6_68yrw")
+region = Rect2(64, 288, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0gmno"]
+atlas = ExtResource("6_68yrw")
+region = Rect2(128, 288, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_orht1"]
+atlas = ExtResource("6_68yrw")
+region = Rect2(192, 288, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a88uj"]
+atlas = ExtResource("6_68yrw")
+region = Rect2(0, 0, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bews0"]
+atlas = ExtResource("6_68yrw")
+region = Rect2(0, 48, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0wjm"]
+atlas = ExtResource("6_68yrw")
+region = Rect2(0, 96, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rcyd0"]
+atlas = ExtResource("6_68yrw")
+region = Rect2(0, 384, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cslyj"]
+atlas = ExtResource("6_68yrw")
+region = Rect2(384, 0, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ce8oc"]
+atlas = ExtResource("6_68yrw")
+region = Rect2(448, 0, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jri3a"]
+atlas = ExtResource("6_68yrw")
+region = Rect2(0, 0, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c58qa"]
+atlas = ExtResource("6_68yrw")
+region = Rect2(64, 0, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kulqi"]
+atlas = ExtResource("6_68yrw")
+region = Rect2(128, 0, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n51mg"]
+atlas = ExtResource("6_68yrw")
+region = Rect2(192, 0, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4a8v4"]
+atlas = ExtResource("6_68yrw")
+region = Rect2(256, 0, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u8oou"]
+atlas = ExtResource("6_68yrw")
+region = Rect2(320, 0, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1xf0n"]
+atlas = ExtResource("6_68yrw")
+region = Rect2(0, 240, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ymnh2"]
+atlas = ExtResource("6_68yrw")
+region = Rect2(64, 240, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3nlnu"]
+atlas = ExtResource("6_68yrw")
+region = Rect2(128, 240, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d6q0g"]
+atlas = ExtResource("6_68yrw")
+region = Rect2(192, 240, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ieoi"]
+atlas = ExtResource("6_68yrw")
+region = Rect2(256, 240, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_stb7s"]
+atlas = ExtResource("6_68yrw")
+region = Rect2(320, 240, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6xdyg"]
+atlas = ExtResource("6_68yrw")
+region = Rect2(384, 240, 64, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6cxyb"]
+atlas = ExtResource("6_68yrw")
+region = Rect2(448, 240, 64, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d4h02"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ohu61")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l62sb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0gmno")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_orht1")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a88uj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bews0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c0wjm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rcyd0")
+}],
+"loop": false,
+"name": &"death",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cslyj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ce8oc")
+}],
+"loop": false,
+"name": &"hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jri3a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c58qa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kulqi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n51mg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4a8v4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u8oou")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1xf0n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ymnh2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3nlnu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d6q0g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ieoi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_stb7s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6xdyg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6cxyb")
+}],
+"loop": true,
+"name": &"running",
+"speed": 15.0
+}]
+
+[node name="PitbullEnemy" type="CharacterBody3D" groups=["enemy"]]
+script = ExtResource("1_qoo3u")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.8, 0, 0, 0, 1, 0, 0, 0, 0.8, 0, 0.2, 0)
+shape = SubResource("CapsuleShape3D_0ea0r")
+
+[node name="Sprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, -0.0285479, 0)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_d4h02")
+animation = &"attack"
+frame = 3
+frame_progress = 1.0
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+path_max_distance = 100.01
+height = 2.0
