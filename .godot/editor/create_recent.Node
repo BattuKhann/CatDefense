@@ -1,14 +1,14 @@
-Node3D
+CollisionShape3D
+StaticBody3D
 MeshInstance3D
+Node3D
 Timer
 CSGCylinder3D
 CSGCombiner3D
 Area3D
 NavigationRegion3D
 AnimatedSprite3D
-CollisionShape3D
 CollisionPolygon3D
-StaticBody3D
 CharacterBody3D
 NavigationAgent3D
 Sprite3D

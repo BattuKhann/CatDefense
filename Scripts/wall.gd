@@ -5,7 +5,7 @@ class_name Wall
 
 func hurt(damage):
 	health -= damage
-	print("wall health: ", health)
+	#print("wall health: ", health)
 
 func isDead() -> bool:
 	return health <= 0

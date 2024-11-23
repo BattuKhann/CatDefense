@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1732395151
+::res://::1732396979
 icon.svg::CompressedTexture2D::5918118020451191775::1731710295::1732381542::1::::<><>::
 ::res://addons/::1732381426
 ::res://addons/csgtomeshinstance/::1732381426
@@ -16,7 +16,7 @@ CSGMesh3D.svg::CompressedTexture2D::6580936178407319191::1732381426::1732395040:
 CSGPolygon3D.svg::CompressedTexture2D::944970624413041387::1732381426::1732395040::1::::<><>::
 CSGSphere3D.svg::CompressedTexture2D::6197815036801202156::1732381426::1732395040::1::::<><>::
 CSGTorus3D.svg::CompressedTexture2D::931692259429754078::1732381426::1732395040::1::::<><>::
-::res://Assets/::1732395871
+::res://Assets/::1732399677
 Font.txt::TextFile::-1::1732313054::0::1::::<><>::
 license.txt::TextFile::-1::1732395017::0::1::::<><>::
 Preview (Variation A).png::CompressedTexture2D::8108296359158223838::1732395833::1732395870::1::::<><>::
@@ -40,6 +40,7 @@ Death.png::CompressedTexture2D::4575873737153446585::1732313053::1732381544::1::
 Hurt.png::CompressedTexture2D::5821516378040850815::1732313053::1732381544::1::::<><>::
 Idle.png::CompressedTexture2D::5790896643465587122::1732313053::1732381544::1::::<><>::
 Walk.png::CompressedTexture2D::6698960944918955150::1732313053::1732381544::1::::<><>::
+::res://Assets/3ds/::1732399262
 ::res://Assets/4 Cat 2/::1732381544
 Attack.png::CompressedTexture2D::3476573783091049545::1732313053::1732381544::1::::<><>::
 Death.png::CompressedTexture2D::2997624440811508813::1732313053::1732381544::1::::<><>::
@@ -66,6 +67,12 @@ Death.png::CompressedTexture2D::6517372356054820910::1732313054::1732381543::1::
 Hurt.png::CompressedTexture2D::4435187326325251504::1732313054::1732381543::1::::<><>::
 Idle.png::CompressedTexture2D::8112331681623798413::1732313054::1732381543::1::::<><>::
 Walk.png::CompressedTexture2D::3491800045765151558::1732313054::1732381543::1::::<><>::
+::res://Assets/Blend/::1732399283
+Apple.blend::PackedScene::2918946890179673246::1367783604::1732399283::1::::<><>::
+Banana.blend::PackedScene::4233223199077848474::1367784108::1732399283::1::::<><>::
+Meat.blend::PackedScene::9123476138654511845::1367783686::1732399283::1::::<><>::
+::res://Assets/for_wagyu/::1732399680
+wagyu.png::CompressedTexture2D::5431224897344613447::1732399681::1732399688::1::::<><>::
 ::res://Assets/kenney_castle-kit/::1732381542
 License.txt::TextFile::-1::1731882379::0::1::::<><>::
 Preview.png::CompressedTexture2D::6961123172950554875::1731882379::1732381542::1::::<><>::
@@ -485,10 +492,14 @@ tree.obj::Mesh::7644871622305385814::1732395832::1732395882::1::::<><>::uid://ca
 workbench-anvil.obj::Mesh::467779520927930261::1732395832::1732395883::1::::<><>::uid://caddvfq64xkba::::res://Assets/Models/OBJ format/Textures/colormap.png
 workbench-grind.obj::Mesh::3832403088668543145::1732395832::1732395883::1::::<><>::uid://caddvfq64xkba::::res://Assets/Models/OBJ format/Textures/colormap.png
 workbench.obj::Mesh::2485388138829560238::1732395833::1732395883::1::::<><>::uid://caddvfq64xkba::::res://Assets/Models/OBJ format/Textures/colormap.png
-::res://Assets/Models/OBJ format/Textures/::1732395870
+::res://Assets/Models/OBJ format/Textures/::1732395992
 colormap.png::CompressedTexture2D::4779254442080472498::1732395833::1732395992::1::::<><>::
 ::res://Assets/Models/Textures/::1732395870
 variation-a.png::CompressedTexture2D::7159251971439114292::1732395833::1732395870::1::::<><>::
+::res://Assets/OBJ/::1732399274
+Apple.obj::Mesh::1074782722278291773::1367783630::1732399274::1::::<><>::
+Banana.obj::Mesh::8376568933881644763::1367783330::1732399274::1::::<><>::
+Meat.obj::Mesh::5516323244787974008::1367783356::1732399274::1::::<><>::
 ::res://Assets/Pixel Dogs-Sprites/::1732381542
 Dogs-Remastered-00.png::CompressedTexture2D::1179398181501561080::1732235389::1732381542::1::::<><>::
 Dogs-Remastered-01.png::CompressedTexture2D::1190711064935757760::1732235389::1732381542::1::::<><>::
@@ -598,6 +609,14 @@ workbench.png::CompressedTexture2D::8793657573363706336::1732395841::1732395871:
 ::res://Assets/Testing_sprite/::1732381542
 HankHill.png::CompressedTexture2D::4617187721309844222::1732142686::1732381542::1::::<><>::
 weirdal.jpg::CompressedTexture2D::8238272803582716206::1732133268::1732381542::1::::<><>::
+::res://Assets/textures/::1732399608
+Apple_normal.jpg::CompressedTexture2D::5918573039050506617::1360176478::1732399274::1::::<><>::
+Apple_spec.png::CompressedTexture2D::4033503363261434890::1351547342::1732399274::1::::<><>::
+Apple_texture.jpg::CompressedTexture2D::4546187568690188795::1360176488::1732399274::1::::<><>::
+Banana_normal.jpg::CompressedTexture2D::243163571160759609::1367783234::1732399274::1::::<><>::
+Banana_texture.jpg::CompressedTexture2D::3590330524668329141::1360176460::1732399274::1::::<><>::
+Meat_normal.jpg::CompressedTexture2D::8379548008182119458::1360176362::1732399608::1::::<><>::
+Meat_texture.jpg::CompressedTexture2D::3175631279990456798::1360176348::1732399274::1::::<><>::
 ::res://Assets/Towers/::1732395041
 cone.glb::PackedScene::7316859511301030293::1732381426::1732395040::1::::<><>::
 laser_pointer.glb::PackedScene::954532081558722010::1732236419::1732381547::1::::<><>::uid://bkyx4sbfnqcxx::::res://Assets/Towers/laser_pointer_0.png<>uid://cqq2ugjbqe5fg::::res://Assets/Towers/laser_pointer_1.png<>uid://bg68qv3xdf0g7::::res://Assets/Towers/laser_pointer_2.png
@@ -619,48 +638,48 @@ token.jpg::CompressedTexture2D::5792463277311223663::1732236419::1732381542::1::
 yarn-only-solid.png::CompressedTexture2D::7311643683194960034::1732236419::1732381542::1::::<><>::
 ::res://Materials/::1732066008
 error_material.tres::StandardMaterial3D::6017914273947640220::1732066008::0::1::::<><>::
-::res://Scenes/::1732395769
+::res://Scenes/::1732399056
 CatRegiment.tscn::PackedScene::2507593317567513272::1732330562::0::1::::<><>::res://Scripts/CatReg.gd
 cat_troop.tscn::PackedScene::4995912679382226834::1732330563::0::1::::<><>::res://Scripts/cat_troop.gd<>uid://b61un3yhgxkr3::::res://Assets/Testing_sprite/HankHill.png
 chihuahua_enemy.tscn::PackedScene::1095426985643374473::1732330564::0::1::::<><>::res://Scripts/chihuahua_enemy.gd<>uid://byftmeuxxm6xb::::res://Assets/Pixel Dogs-Sprites/Dogs-Remastered-08.png
 doberman_enemy.tscn::PackedScene::7374544796172048673::1732330563::0::1::::<><>::res://Scripts/doberman_enemy.gd<>uid://bg5wddltr8knk::::res://Assets/1 Dog/Death.png<>uid://dtdrvpxq0iymg::::res://Assets/1 Dog/Attack.png<>uid://brhsm2t5687e3::::res://Assets/1 Dog/Idle.png<>uid://us3gqx8gl28::::res://Assets/1 Dog/Hurt.png<>uid://6sxexjddb4qj::::res://Assets/1 Dog/Walk.png
 enemy_spawner.tscn::PackedScene::8412451031139265054::1732236419::0::1::::<><>::res://Scripts/enemy_spawner.gd
-GridSystem.tscn::PackedScene::2101517985792705433::1732395022::0::1::::<><>::res://Scripts/GridSystem.gd<>res://Scripts/Row.gd<>res://Scripts/Square.gd
-main_scene.tscn::PackedScene::4410031016136243023::1732395769::0::1::::<><>::uid://df5h3hmm55bq0::::res://Scenes/wave_ui.tscn<>uid://qsu4xbha5uot::::res://Scenes/player_ui.tscn<>res://Scripts/main_camera.gd<>uid://468xuqpurgrx::::res://Scenes/GridSystem.tscn<>uid://soi0rpdrjb4x::::res://Scenes/random_dog_spawner.tscn<>uid://dyoijxsy0btqb::::res://Scenes/placement_system.tscn
+GridSystem.tscn::PackedScene::2101517985792705433::1732398753::0::1::::<><>::res://Scripts/GridSystem.gd<>res://Scripts/Row.gd<>res://Scripts/Square.gd
+main_scene.tscn::PackedScene::4410031016136243023::1732398754::0::1::::<><>::uid://df5h3hmm55bq0::::res://Scenes/wave_ui.tscn<>uid://qsu4xbha5uot::::res://Scenes/player_ui.tscn<>res://Scripts/main_camera.gd<>uid://468xuqpurgrx::::res://Scenes/GridSystem.tscn<>uid://soi0rpdrjb4x::::res://Scenes/random_dog_spawner.tscn<>uid://dyoijxsy0btqb::::res://Scenes/placement_system.tscn<>uid://cxfuj1ya2kcus::::res://Assets/Models/OBJ format/patch-grass.obj<>uid://ydxbqyh16lrp::::res://Assets/Models/OBJ format/rock-a.obj<>uid://ba4sgmdtkpx8u::::res://Assets/Models/OBJ format/rock-b.obj<>uid://dnh5fxiw3cq6j::::res://Assets/Models/OBJ format/rock-c.obj<>uid://c7iwo75rm2gmb::::res://Assets/Models/OBJ format/tree-autumn.obj<>uid://dc3qdj1mcc5mi::::res://Assets/Models/OBJ format/tree-autumn-tall.obj<>uid://28tpoiwgvxd3::::res://Assets/Models/OBJ format/tree-tall.obj<>uid://dg6h6iagbwdcg::::res://Assets/Models/OBJ format/tree.obj<>uid://cnoc4k558lav2::::res://Assets/Models/OBJ format/tree-log.obj<>uid://ce604gav6wkhe::::res://Assets/Models/OBJ format/tree-trunk.obj
 pitbull_enemy.tscn::PackedScene::5922857653051525930::1732330900::0::1::::<><>::res://Scripts/pitbull_enemy.gd<>uid://bqo8xwot5ow4h::::res://Assets/Pixel Dogs-Sprites/Dogs-Remastered-16.png
 placement_button.tscn::PackedScene::1197645401160800682::1732330563::0::1::::<><>::res://Scripts/placement_button.gd
 placement_system.tscn::PackedScene::8873198632003646213::1731982627::0::1::::<><>::res://Scripts/placement_system.gd
-player_ui.tscn::PackedScene::1161447635561273807::1732388917::0::1::::<><>::res://Scripts/player_ui.gd<>uid://rcfbr08x6gnq::::res://Scenes/placement_button.tscn<>uid://bwj3l4vb7abs0::::res://Assets/kenney_castle-kit/Previews/wall.png<>uid://homyvwp7g3wf::::res://Assets/kenney_castle-kit/Models/GLB format/wall.glb
-random_dog_spawner.tscn::PackedScene::1292831771059572461::1732395661::0::1::::<><>::res://Scripts/dog_spawner.gd
+player_ui.tscn::PackedScene::1161447635561273807::1732398753::0::1::::<><>::res://Scripts/player_ui.gd<>uid://rcfbr08x6gnq::::res://Scenes/placement_button.tscn<>uid://bwj3l4vb7abs0::::res://Assets/kenney_castle-kit/Previews/wall.png<>uid://homyvwp7g3wf::::res://Assets/kenney_castle-kit/Models/GLB format/wall.glb
+random_dog_spawner.tscn::PackedScene::1292831771059572461::1732399056::0::1::::<><>::res://Scripts/dog_spawner.gd
 test_scene.tscn::PackedScene::3390527863620290519::1732395017::0::1::::<><>::uid://468xuqpurgrx::::res://Scenes/GridSystem.tscn<>res://Scripts/main_camera.gd<>uid://bbyxxwc60hi4w::::res://Scenes/CatRegiment.tscn<>uid://dyoijxsy0btqb::::res://Scenes/placement_system.tscn<>uid://qsu4xbha5uot::::res://Scenes/player_ui.tscn<>uid://dvj28a05aryxr::::res://Scenes/Towers/laser_beam.tscn<>uid://ddo24ebk03i2v::::res://Scenes/Towers/laser_tower.tscn<>uid://d3y25y3nlihn::::res://Scenes/Towers/catapult_tower.tscn
-test_scene_sri.tscn::PackedScene::3253484571724197034::1732395017::0::1::::<><>::uid://qsu4xbha5uot::::res://Scenes/player_ui.tscn<>uid://dyoijxsy0btqb::::res://Scenes/placement_system.tscn<>res://Scripts/main_camera.gd<>uid://468xuqpurgrx::::res://Scenes/GridSystem.tscn<>res://Scenes/random_dog_spawner.tscn<>uid://bbyxxwc60hi4w::::res://Scenes/CatRegiment.tscn
+test_scene_sri.tscn::PackedScene::3253484571724197034::1732398753::0::1::::<><>::uid://qsu4xbha5uot::::res://Scenes/player_ui.tscn<>uid://dyoijxsy0btqb::::res://Scenes/placement_system.tscn<>res://Scripts/main_camera.gd<>uid://468xuqpurgrx::::res://Scenes/GridSystem.tscn<>uid://soi0rpdrjb4x::::res://Scenes/random_dog_spawner.tscn<>uid://bbyxxwc60hi4w::::res://Scenes/CatRegiment.tscn
 wall.tscn::PackedScene::9212126097266973347::1732395017::0::1::::<><>::res://Scripts/wall.gd<>uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png
-wave_ui.tscn::PackedScene::7572613009857560717::1732395559::0::1::::<><>::res://Scripts/wave_ui.gd
-::res://Scenes/Towers/::1732395017
+wave_ui.tscn::PackedScene::7572613009857560717::1732398753::0::1::::<><>::res://Scripts/wave_ui.gd
+::res://Scenes/Towers/::1732398753
 archer.tscn::PackedScene::5153253861664094973::1732395017::0::1::::<><>::res://Scripts/archer.gd<>uid://dv5whes48ysdv::::res://Scenes/Towers/arrow.tscn<>uid://dciluv4hfghn6::::res://Assets/Towers/cone.glb
 archer_tower.tscn::PackedScene::557643490835592838::1732395017::0::1::::<><>::uid://bir67fqgprcfn::::res://Assets/kenney_castle-kit/Models/GLB format/tower-hexagon-base.glb<>uid://hg5nlay8hnqn::::res://Assets/kenney_castle-kit/Models/GLB format/tower-hexagon-mid.glb<>uid://dj3t0qvqeiv0m::::res://Assets/kenney_castle-kit/Models/GLB format/tower-hexagon-roof.glb<>uid://cfojlq7xh8262::::res://Scenes/Towers/archer.tscn
 arrow.tscn::PackedScene::8696507613760543667::1732324701::0::1::::<><>::uid://difsmidwqaha3::::res://Assets/Towers/low_poly_bow__arrow_1.png
 beam_particles.tscn::PackedScene::3368282977043846680::1732236419::0::1::::<><>::
 catapult_tower.tscn::PackedScene::269876146355414595::1732395017::0::1::::<><>::uid://bir67fqgprcfn::::res://Assets/kenney_castle-kit/Models/GLB format/tower-hexagon-base.glb<>res://Scripts/catapult_tower.gd<>uid://bpbwmr4f8dhu7::::res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png<>uid://dg1u5esyswxsw::::res://Scenes/Towers/yarn_mesh.tscn
 end_particles.tscn::PackedScene::7908936143686503385::1732236419::0::1::::<><>::
-laser_beam.tscn::PackedScene::8653505497251947143::1732395017::0::1::::<><>::res://Scripts/laser_beam.gd<>uid://dkxfa1lhbipx6::::res://Scenes/Towers/end_particles.tscn<>uid://bn8vemtlm8yro::::res://Scenes/Towers/beam_particles.tscn
-laser_tower.tscn::PackedScene::7400421229505252027::1732395017::0::1::::<><>::res://Scripts/laser_tower.gd<>uid://bir67fqgprcfn::::res://Assets/kenney_castle-kit/Models/GLB format/tower-hexagon-base.glb<>uid://nunaesikksxu::::res://Assets/Towers/laser_pointer.glb<>uid://dvj28a05aryxr::::res://Scenes/Towers/laser_beam.tscn
+laser_beam.tscn::PackedScene::8653505497251947143::1732398753::0::1::::<><>::res://Scripts/laser_beam.gd<>uid://dkxfa1lhbipx6::::res://Scenes/Towers/end_particles.tscn<>uid://bn8vemtlm8yro::::res://Scenes/Towers/beam_particles.tscn
+laser_tower.tscn::PackedScene::7400421229505252027::1732398753::0::1::::<><>::res://Scripts/laser_tower.gd<>uid://bir67fqgprcfn::::res://Assets/kenney_castle-kit/Models/GLB format/tower-hexagon-base.glb<>uid://nunaesikksxu::::res://Assets/Towers/laser_pointer.glb<>uid://dvj28a05aryxr::::res://Scenes/Towers/laser_beam.tscn
 yarn_ball.tscn::PackedScene::1962101776481412426::1732324701::0::1::::<><>::uid://dg1u5esyswxsw::::res://Scenes/Towers/yarn_mesh.tscn
 yarn_mesh.tscn::PackedScene::7635337087200804006::1732395017::0::1::::<><>::uid://cee2ou66afia0::::res://Assets/Towers/yarnball/files/yarn-only-solid.obj
-::res://Scripts/::1732395546
+::res://Scripts/::1732399054
 archer.gd::GDScript::-1::1732381426::0::1::::<>Node3D<>::
 catapult_tower.gd::GDScript::-1::1732381426::0::1::::<>Node3D<>::
 CatReg.gd::GDScript::-1::1731722271::0::1::::CatRegiment<>Node3D<>::
 cat_troop.gd::GDScript::-1::1732311624::0::1::::<>CharacterBody3D<>::
 chihuahua_enemy.gd::GDScript::-1::1732325498::0::1::::<>CharacterBody3D<>::
 doberman_enemy.gd::GDScript::-1::1732325082::0::1::::<>CharacterBody3D<>::
-dog_spawner.gd::GDScript::-1::1732395456::0::1::::WaveDogSpawner<>Node3D<>::
+dog_spawner.gd::GDScript::-1::1732399054::0::1::::WaveDogSpawner<>Node3D<>::
 enemy_spawner.gd::GDScript::-1::1732236419::0::1::::<>Node3D<>::
 GridSystem.gd::GDScript::-1::1731722023::0::1::::<>Node3D<>::
 laser_beam.gd::GDScript::-1::1732381426::0::1::::<>RayCast3D<>::
 laser_tower.gd::GDScript::-1::1732395017::0::1::::<>Node3D<>::
 main_camera.gd::GDScript::-1::1731893725::0::1::::<>Camera3D<>::
-pitbull_enemy.gd::GDScript::-1::1732330900::0::1::::<>CharacterBody3D<>::
+pitbull_enemy.gd::GDScript::-1::1732397736::0::1::::<>CharacterBody3D<>::
 placement_button.gd::GDScript::-1::1731893725::0::1::::<>Button<>::
 placement_system.gd::GDScript::-1::1732395022::0::1::::PlacementSystem<>Node3D<>::
 player_ui.gd::GDScript::-1::1731893725::0::1::::PlayerUi<>Node2D<>::
@@ -670,4 +689,4 @@ Square.gd::GDScript::-1::1732066008::0::1::::Square<>Node3D<>::
 test_trrop.gd::GDScript::-1::1732227198::0::1::::<>CharacterBody3D<>::
 Troop.gd::GDScript::-1::1731722023::0::1::::Troop<>RefCounted<>::
 Unit.gd::GDScript::-1::1731722023::0::1::::Unit<>RefCounted<>::
-wall.gd::GDScript::-1::1732330909::0::1::::Wall<>Node3D<>::
+wall.gd::GDScript::-1::1732397621::0::1::::Wall<>Node3D<>::

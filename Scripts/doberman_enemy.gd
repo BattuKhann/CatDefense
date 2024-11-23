@@ -5,7 +5,7 @@ const ACCEL = 6
 
 @export var DAMAGE = 10
 @export var camera3d: Camera3D
-@export var health = 400
+@export var health = 10000
 
 @export var damage: int = 10  # Damage dealt by this enemy
 @export var attack_range: float = 2 # Range within which the enemy will attack
@@ -95,7 +95,8 @@ func find_target():
 		target.connect("tree_exited", Callable(self, "_on_target_exited"))
 		navigation_agent_3d.target_position = target.global_transform.origin
 	else:
-		print("No valid target found.")
+		pass
+		#print("No valid target found.")
 
 # Called when the current target is removed from the scene
 func _on_target_exited():

@@ -88,7 +88,8 @@ func find_target():
 		target.connect("tree_exited", Callable(self, "_on_target_exited"))
 		navigation_agent_3d.target_position = target.global_transform.origin
 	else:
-		print("No valid target found.")
+		pass
+		#print("No valid target found.")
 
 # Called when the current target is removed from the scene
 func _on_target_exited():

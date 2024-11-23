@@ -58,12 +58,12 @@ skeleton = NodePath("../../Spawn1")
 wait_time = 20.0
 
 [node name="Headstart" type="Timer" parent="."]
-wait_time = 5.0
+wait_time = 10.0
 one_shot = true
 autostart = true
 
 [node name="ExtraneousDogsTimer" type="Timer" parent="."]
-wait_time = 3.0
+wait_time = 2.0
 
 [connection signal="timeout" from="WaveTimer" to="." method="_wave_timer_timeout"]
 [connection signal="timeout" from="Headstart" to="." method="_headstart_timeout"]

@@ -43,7 +43,7 @@ func _process(delta):
 
 func setStuff(obj: Node3D, spawn: Node3D):
 	obj.add_to_group("enemy")
-	obj.global_position = spawn.global_position + Vector3(randi_range(-10,10), 0, randi_range(-10,10))
+	obj.global_position = spawn.global_position + Vector3(randi_range(-8,8), 0, randi_range(-8,8))
 	get_tree().root.add_child(obj)
 
 func spawnDogs():
@@ -79,22 +79,59 @@ func spawnDogs():
 		repeatsLeft = 1
 		extraTimer.start()
 	elif wave <= 20:
-		pass
+		var doberc: Node3D = dober.instantiate()
+		var pitc: Node3D = pitbull.instantiate()
+		var pitc2: Node3D = pitbull.instantiate()
+		var pitc3: Node3D = pitbull.instantiate()
+		
+		setStuff(doberc, spawn_1)
+		setStuff(pitc, spawn_2)
+		setStuff(pitc2, spawn_3)
+		setStuff(pitc3, spawn_4)
+		
+		repeatsLeft = 3
+		extraTimer.start()
 	elif wave <= 25:
-		pass
+		var doberc: Node3D = dober.instantiate()
+		var pitc: Node3D = pitbull.instantiate()
+		var pitc2: Node3D = pitbull.instantiate()
+		var chi: Node3D = chihuahua.instantiate()
+		
+		setStuff(doberc, spawn_1)
+		setStuff(pitc, spawn_2)
+		setStuff(pitc2, spawn_3)
+		setStuff(chi, spawn_4)
+		
+		repeatsLeft = 3
+		extraTimer.start()
 	elif wave <= 29:
-		pass
+		var doberc: Node3D = dober.instantiate()
+		var doberc2: Node3D = dober.instantiate()
+		var doberc3: Node3D = dober.instantiate()
+		var chi: Node3D = chihuahua.instantiate()
+		
+		setStuff(doberc, spawn_1)
+		setStuff(doberc2, spawn_2)
+		setStuff(doberc3, spawn_3)
+		setStuff(chi, spawn_4)
+		
+		repeatsLeft = 4
+		extraTimer.start()
 	elif wave == 30:
 		var doberc: Node3D = dober.instantiate()
 		var doberc2: Node3D = dober.instantiate()
 		var doberc3: Node3D = dober.instantiate()
 		var doberc4: Node3D = dober.instantiate()
+		var chi: Node3D = chihuahua.instantiate()
+		var chi2: Node3D = chihuahua.instantiate()
 		
-		repeatsLeft = 8
+		repeatsLeft = 6
 		setStuff(doberc, spawn_1)
 		setStuff(doberc2, spawn_2)
 		setStuff(doberc3, spawn_3)
 		setStuff(doberc4, spawn_4)
+		setStuff(chi, spawn_5)
+		setStuff(chi2, spawn_6)
 
 func spawnExtraChihuahua():
 	var chiwc: Node3D = chihuahua.instantiate()

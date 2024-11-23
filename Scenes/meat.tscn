@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfng5jvr8a8r0"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_k1xpf"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_4yw67"]
+albedo_color = Color(0.505344, 0.505344, 0.505344, 1)
+
+[node name="Meat" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 0.06, 0, 0, 0, 3, 0, 0, 0)
+mesh = SubResource("CylinderMesh_k1xpf")
+surface_material_override/0 = SubResource("ORMMaterial3D_4yw67")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(4.5, 0, 0, 0, 0.06, 0, 0, 0, 4.5, 0, 0.1, 0)
+mesh = SubResource("CylinderMesh_k1xpf")
+surface_material_override/0 = SubResource("ORMMaterial3D_4yw67")
