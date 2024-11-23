@@ -8,14 +8,14 @@
 script = ExtResource("1_rhfuf")
 
 [node name="Spawn1" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.497459, 0, -1)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Spawn1"]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
 mesh = SubResource("BoxMesh_8u7h7")
 
 [node name="Spawn2" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.495455, 0, -1)
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Spawn2"]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
@@ -23,7 +23,7 @@ mesh = SubResource("BoxMesh_8u7h7")
 skeleton = NodePath("../../Spawn1")
 
 [node name="Spawn3" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -0.674909)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.49746, 0, -0.674909)
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="Spawn3"]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
@@ -31,7 +31,7 @@ mesh = SubResource("BoxMesh_8u7h7")
 skeleton = NodePath("../../Spawn1")
 
 [node name="Spawn4" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -0.674909)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.49545, 0, -0.674909)
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="Spawn4"]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
@@ -39,7 +39,7 @@ mesh = SubResource("BoxMesh_8u7h7")
 skeleton = NodePath("../../Spawn1")
 
 [node name="Spawn5" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -0.311793)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.13914, 0, -0.311793)
 
 [node name="MeshInstance3D5" type="MeshInstance3D" parent="Spawn5"]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
@@ -47,7 +47,7 @@ mesh = SubResource("BoxMesh_8u7h7")
 skeleton = NodePath("../../Spawn1")
 
 [node name="Spawn6" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -0.311793)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1029, 0, -0.311793)
 
 [node name="MeshInstance3D6" type="MeshInstance3D" parent="Spawn6"]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
