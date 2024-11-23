@@ -43,7 +43,7 @@ func _process(delta):
 
 func setStuff(obj: Node3D, spawn: Node3D):
 	obj.add_to_group("enemy")
-	obj.global_position = spawn.global_position
+	obj.global_position = spawn.global_position + Vector3(randi_range(-10,10), 0, randi_range(-10,10))
 	get_tree().root.add_child(obj)
 
 func spawnDogs():
