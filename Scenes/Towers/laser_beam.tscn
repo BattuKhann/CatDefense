@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dvj28a05aryxr"]
+[gd_scene load_steps=13 format=3 uid="uid://dvj28a05aryxr"]
 
 [ext_resource type="Script" path="res://Scripts/laser_beam.gd" id="1_43vk4"]
 [ext_resource type="PackedScene" uid="uid://dkxfa1lhbipx6" path="res://Scenes/Towers/end_particles.tscn" id="2_cg70e"]
@@ -25,7 +25,7 @@ point_count = 3
 [sub_resource type="CurveTexture" id="CurveTexture_mn5q4"]
 curve = SubResource("Curve_hjoim")
 
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_dyyxj"]
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_vy5b3"]
 resource_local_to_scene = true
 spread = 80.0
 initial_velocity_min = 1.0
@@ -52,6 +52,8 @@ gravity = Vector3(0, 0, 0)
 scale_curve = SubResource("CurveTexture_53yd1")
 collision_mode = 2
 
+[sub_resource type="BoxMesh" id="BoxMesh_701cc"]
+
 [node name="LaserBeam" type="RayCast3D"]
 script = ExtResource("1_43vk4")
 
@@ -61,7 +63,11 @@ surface_material_override/0 = SubResource("StandardMaterial3D_0b303")
 
 [node name="EndParticles" parent="." instance=ExtResource("2_cg70e")]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
-process_material = SubResource("ParticleProcessMaterial_dyyxj")
+process_material = SubResource("ParticleProcessMaterial_vy5b3")
 
 [node name="BeamParticles" parent="." instance=ExtResource("3_r0qj8")]
 process_material = SubResource("ParticleProcessMaterial_qck7p")
+
+[node name="Temp" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, -1, 0)
+mesh = SubResource("BoxMesh_701cc")

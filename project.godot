@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 project/assembly_name="CatKingdom"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/csgtomeshinstance/csg_converter-d68ad5524784ef0fe915ed6b415d513178314cd8/addons/csg_converter/plugin.cfg")
+
 [global_group]
 
 enemy="dog enemy group"

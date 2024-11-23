@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dyoijxsy0btqb" path="res://Scenes/placement_system.tscn" id="2_tduuc"]
 [ext_resource type="Script" path="res://Scripts/main_camera.gd" id="3_umf3i"]
 [ext_resource type="PackedScene" uid="uid://468xuqpurgrx" path="res://Scenes/GridSystem.tscn" id="4_k1ub5"]
-[ext_resource type="PackedScene" uid="uid://soi0rpdrjb4x" path="res://Scenes/random_dog_spawner.tscn" id="5_oip7q"]
+[ext_resource type="PackedScene" path="res://Scenes/random_dog_spawner.tscn" id="5_oip7q"]
 [ext_resource type="PackedScene" uid="uid://bbyxxwc60hi4w" path="res://Scenes/CatRegiment.tscn" id="5_qi2vj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_sk0j4"]

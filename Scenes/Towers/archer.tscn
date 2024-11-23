@@ -1,10 +1,42 @@
-[gd_scene load_steps=3 format=3 uid="uid://cfojlq7xh8262"]
+[gd_scene load_steps=6 format=3 uid="uid://cfojlq7xh8262"]
 
 [ext_resource type="Script" path="res://Scripts/archer.gd" id="1_8uafw"]
 [ext_resource type="PackedScene" uid="uid://dv5whes48ysdv" path="res://Scenes/Towers/arrow.tscn" id="2_6hp6h"]
+[ext_resource type="PackedScene" uid="uid://dciluv4hfghn6" path="res://Assets/Towers/cone.glb" id="3_3mc53"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_0r3hr"]
+size = Vector3(5, 2, 2)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_41g7j"]
+points = PackedVector3Array(2.5, 1, 1, 2.5, 1, -1, -2.5, 1, 1, 2.5, -1, 1, 2.5, -1, -1, -2.5, 1, -1, -2.5, -1, 1, -2.5, -1, -1)
 
 [node name="Archer" type="Node3D"]
 script = ExtResource("1_8uafw")
 
 [node name="Arrow" parent="." instance=ExtResource("2_6hp6h")]
 gravity_scale = 0.0
+
+[node name="LOS" type="Area3D" parent="."]
+
+[node name="cone" parent="LOS" instance=ExtResource("3_3mc53")]
+transform = Transform3D(1.41421, -1.41421, 0, 1.41421, 1.41421, 0, 0, 0, 2, 1.45, -1.4, 0)
+visible = false
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LOS"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.55, -0.968, 0)
+visible = false
+mesh = SubResource("BoxMesh_0r3hr")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LOS"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.55, -0.968, 0)
+shape = SubResource("ConvexPolygonShape3D_41g7j")
+
+[node name="ReloadTimer" type="Timer" parent="."]
+wait_time = 3.0
+
+[node name="VisionTimer" type="Timer" parent="."]
+wait_time = 0.25
+autostart = true
+
+[connection signal="timeout" from="ReloadTimer" to="." method="_on_reload"]
+[connection signal="timeout" from="VisionTimer" to="." method="_visionCheck"]

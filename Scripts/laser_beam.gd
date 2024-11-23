@@ -8,15 +8,19 @@ var tween: Tween
 var beam_radius: float = 0.03
 
 func _ready() -> void:
-	
-	await get_tree().create_timer(2.0).timeout
-	
-	deactivate(0.5)
-	
-	await get_tree().create_timer(2.0).timeout
-	
 	activate(0.5)
+	#await get_tree().create_timer(2.0).timeout
+	
+	#deactivate(0.5)
+	
+	#await get_tree().create_timer(2.0).timeout
+	
+	#activate(0.5)
+	pass
 
+func fire(time):
+	activate(time)
+	#deactivate(2)
 
 func _process(delta: float) -> void:
 	var castpoint
@@ -41,6 +45,8 @@ func _process(delta: float) -> void:
 		
 		beam_particles.process_material.set_emission_box_extents(
 			Vector3(beam_mesh.mesh.top_radius, abs(castpoint.y)/2, beam_mesh.mesh.top_radius))
+	if !is_colliding():
+		beam_mesh.mesh.height = 50
 
 func activate(time: float):
 	tween = get_tree().create_tween()

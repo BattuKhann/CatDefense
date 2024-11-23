@@ -2,10 +2,12 @@ extends Node3D
 
 @onready var animationPlayer: AnimationPlayer = $AnimationPlayer
 @onready var projectile: PackedScene = preload("res://Scenes/Towers/yarn_ball.tscn")
-@onready var initYarn: MeshInstance3D = $"siege-catapult2/siege-catapult/catapult/YarnMesh"
-@onready var initYarnPos: Node3D = $"siege-catapult2/siege-catapult/catapult/YarnMesh/Node3D"
+@onready var initYarn: Node3D = $Yarn
+@onready var reload_timer = $ReloadTimer
 
 var velocityX: float = 20.0
+var loaded: bool = true
+var target: Node3D
 
 func _ready() -> void:
 	while(true):
@@ -13,7 +15,9 @@ func _ready() -> void:
 		await animationPlayer.animation_finished
 		await animationPlayer.animation_finished
 
-func _process(delta: float) -> void:
+func _process(_delta):
+	#if loaded:
+		#shoot(target.global_position)
 	pass
 
 func shoot(targetPos: Vector3):
@@ -21,27 +25,31 @@ func shoot(targetPos: Vector3):
 	animationPlayer.play("Fire")
 	await animationPlayer.animation_finished
 	
-	var launchPos = initYarn.global_transform.origin
+	var launchPos = initYarn.global_position
 	var displacement = targetPos - launchPos
 
-	var horizontal_distance = Vector3(displacement.x, 0, displacement.z).length()
-	#print(horizontal_distance)
+	var horizontal_distance = sqrt(ceilf(displacement.x) * ceilf(displacement.x) + ceilf(displacement.z) * ceilf(displacement.z))
 	var y_displacement = initYarn.global_position.y
 	
 	var time = horizontal_distance / velocityX
-	var velocityY = ((9.8/2 * time * time) - launchPos.y) / time
-	
+	var velocityY = (displacement.y + (9.8/2 * time * time)) / time
+
 	var local_velocity = Vector3(velocityX, velocityY, 0)
 	var global_velocity = global_transform.basis * local_velocity
-	#print(local_velocity)
+
 	var launched = projectile.instantiate()
-	#launched.global_transform.origin = launchPos
-	launched.global_transform.origin = Vector3(launchPos.x - 2.7, launchPos.y + 0.46, launchPos.z + 0.55)
-	#print(Vector3(launchPos.x - 2, launchPos.y + 1, launchPos.z + 0.581921))
 	initYarn.visible = false
 	add_child(launched)
 	
+	launched.global_position = initYarn.global_position
+
 	launched.linear_velocity = global_velocity
-	#launched.mass = 0
+	
+	loaded = false
+	reload_timer.start()
 	
 	animationPlayer.play("Reload")
+
+
+func _on_reload() -> void:
+	loaded = true

@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://h7ekoxknfkg1"]
+[gd_scene load_steps=5 format=3 uid="uid://h7ekoxknfkg1"]
 
 [ext_resource type="PackedScene" uid="uid://bir67fqgprcfn" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-hexagon-base.glb" id="1_063rb"]
 [ext_resource type="PackedScene" uid="uid://hg5nlay8hnqn" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-hexagon-mid.glb" id="2_0m86f"]
 [ext_resource type="PackedScene" uid="uid://dj3t0qvqeiv0m" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-hexagon-roof.glb" id="3_etkcn"]
+[ext_resource type="PackedScene" uid="uid://cfojlq7xh8262" path="res://Scenes/Towers/archer.tscn" id="4_48kn0"]
 
 [node name="ArcherTower" type="Node3D"]
 
@@ -16,3 +17,26 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3, 0)
 
 [node name="tower-hexagon-roof2" parent="." instance=ExtResource("3_etkcn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.75, 0)
+
+[node name="Archer" parent="." instance=ExtResource("4_48kn0")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.33983e-09, 1.51086, 0.369126)
+
+[node name="Archer2" parent="." instance=ExtResource("4_48kn0")]
+transform = Transform3D(-0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, -0.866025, -0.321146, 1.51086, 0.189947)
+visible = false
+
+[node name="Archer3" parent="." instance=ExtResource("4_48kn0")]
+transform = Transform3D(-0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, -0.866025, -0.318, 1.51086, -0.183149)
+visible = false
+
+[node name="Archer4" parent="." instance=ExtResource("4_48kn0")]
+transform = Transform3D(1.19209e-07, 0, 1, 0, 1, 0, -1, 0, 1.19209e-07, -0.00118629, 1.51086, -0.365987)
+visible = false
+
+[node name="Archer5" parent="." instance=ExtResource("4_48kn0")]
+transform = Transform3D(0.866026, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866026, 0.318264, 1.51086, -0.180869)
+visible = false
+
+[node name="Archer6" parent="." instance=ExtResource("4_48kn0")]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 0.306546, 1.51086, 0.176716)
+visible = false
