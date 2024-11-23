@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dg1u5esyswxsw"]
+
+[ext_resource type="ArrayMesh" uid="uid://cee2ou66afia0" path="res://Assets/Towers/yarnball/files/yarn-only-solid.obj" id="1_v2o18"]
+
+[node name="YarnMesh" type="MeshInstance3D"]
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 0.449402, 0.723999, -0.407223)
+mesh = ExtResource("1_v2o18")

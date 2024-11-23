@@ -237,7 +237,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [true, false]
+"values": [true, true]
 }
 
 [sub_resource type="Animation" id="Animation_adh8m"]
@@ -334,6 +334,10 @@ skeleton = NodePath("")
 [node name="YarnMesh" type="MeshInstance3D" parent="siege-catapult2/siege-catapult/catapult"]
 transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -0.862746, 0.998748, -0.427793)
 mesh = ExtResource("4_ecikw")
+
+[node name="Node3D" type="Node3D" parent="siege-catapult2/siege-catapult/catapult/YarnMesh"]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, -8.74508, -13.975, 8.55586)
+visible = false
 
 [node name="wheel" type="MeshInstance3D" parent="siege-catapult2/siege-catapult"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.366912, 0.052416, -0.538335)

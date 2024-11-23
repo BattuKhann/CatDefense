@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bbyxxwc60hi4w" path="res://Scenes/CatRegiment.tscn" id="5_qi2vj"]
 [ext_resource type="PackedScene" uid="uid://ddcjw7yj3wj4t" path="res://Scenes/doberman_enemy.tscn" id="6_0c6lx"]
 [ext_resource type="PackedScene" uid="uid://cdgb7mofs4jyw" path="res://Scenes/cat_troop.tscn" id="7_0hsem"]
-[ext_resource type="PackedScene" uid="uid://cqncun3qeaiy1" path="res://Scenes/pitbull_enemy.tscn" id="8_owuqj"]
+[ext_resource type="PackedScene" path="res://Scenes/pitbull_enemy.tscn" id="8_owuqj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_sk0j4"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
