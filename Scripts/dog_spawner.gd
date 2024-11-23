@@ -1,4 +1,5 @@
 extends Node3D
+class_name WaveDogSpawner
 
 @export var wave = 0
 var spawning;
@@ -20,20 +21,25 @@ var repeatsLeft = 0
 @onready var pitbull: PackedScene = preload("res://Scenes/pitbull_enemy.tscn")
 @onready var chihuahua: PackedScene = preload("res://Scenes/chihuahua_enemy.tscn")
 
+func getwave() -> int:
+	return wave
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	headstart.start()
 	spawning = false
 	
+	# these 3 lines are fucking useless
 	for i in get_children():
 		if i is Node3D:
 			spawns.append(i)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	print("headstart: ", headstart.time_left)
-	print("wave timer: ", waveTimer.time_left)
-	print("Wave: ", wave)
+	pass
+	#print("headstart: ", headstart.time_left)
+	#print("wave timer: ", waveTimer.time_left)
+	#print("Wave: ", wave)
 
 func setStuff(obj: Node3D, spawn: Node3D):
 	obj.add_to_group("enemy")
@@ -104,14 +110,16 @@ func spawnExtraDoberman():
 
 func _headstart_timeout():
 	spawning = true
+	wave += 1
 	waveTimer.start()
 	headstart.stop()
 	spawnDogs()
 
 func _wave_timer_timeout():
-	wave += 1
-	waveTimer.start()
-	spawnDogs()
+	if wave <= 29:
+		wave += 1
+		waveTimer.start()
+		spawnDogs()
 
 func _extraneous_timer_timeout():
 	if repeatsLeft > 0:

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dhgigy8lox8ra"
+path="res://.godot/imported/tool-pickaxe-upgraded.obj-d99e48f6c893f9a44a17f0db5981cf02.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tool-pickaxe-upgraded.obj-d99e48f6c893f9a44a17f0db5981cf02.mesh"]
+
+source_file="res://Assets/Models/OBJ format/tool-pickaxe-upgraded.obj"
+dest_files=["res://.godot/imported/tool-pickaxe-upgraded.obj-d99e48f6c893f9a44a17f0db5981cf02.mesh", "res://.godot/imported/tool-pickaxe-upgraded.obj-d99e48f6c893f9a44a17f0db5981cf02.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

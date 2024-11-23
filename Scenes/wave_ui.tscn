@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://df5h3hmm55bq0"]
+
+[ext_resource type="Script" path="res://Scripts/wave_ui.gd" id="1_yyuio"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_70ndb"]
+font_size = 60
+outline_size = 15
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 10
+
+[node name="WaveUI" type="Node2D"]
+script = ExtResource("1_yyuio")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="WaveLabel" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.03
+anchor_right = 0.5
+anchor_bottom = 0.1
+offset_left = -87.5
+offset_right = 87.5
+offset_bottom = 83.0
+grow_horizontal = 2
+text = "Wave:"
+label_settings = SubResource("LabelSettings_70ndb")

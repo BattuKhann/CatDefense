@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dp3vd4b8pq2ot"
+path="res://.godot/imported/tool-hammer-upgraded.obj-b8740d4a0463e8f9dd9f4f90c5f9b871.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tool-hammer-upgraded.obj-b8740d4a0463e8f9dd9f4f90c5f9b871.mesh"]
+
+source_file="res://Assets/Models/OBJ format/tool-hammer-upgraded.obj"
+dest_files=["res://.godot/imported/tool-hammer-upgraded.obj-b8740d4a0463e8f9dd9f4f90c5f9b871.mesh", "res://.godot/imported/tool-hammer-upgraded.obj-b8740d4a0463e8f9dd9f4f90c5f9b871.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

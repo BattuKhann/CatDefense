@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d0owls6msgx5i"
+path="res://.godot/imported/bedroll-packed.obj-8ef1b471d97b7c3c3663b7f630fd5014.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bedroll-packed.obj-8ef1b471d97b7c3c3663b7f630fd5014.mesh"]
+
+source_file="res://Assets/Models/OBJ format/bedroll-packed.obj"
+dest_files=["res://.godot/imported/bedroll-packed.obj-8ef1b471d97b7c3c3663b7f630fd5014.mesh", "res://.godot/imported/bedroll-packed.obj-8ef1b471d97b7c3c3663b7f630fd5014.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

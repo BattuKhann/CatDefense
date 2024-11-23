@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://f25ij1l23kur"
+path="res://.godot/imported/campfire-stand.obj-50058baeebdebe255fa6f0ef20b065d1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/campfire-stand.obj-50058baeebdebe255fa6f0ef20b065d1.mesh"]
+
+source_file="res://Assets/Models/OBJ format/campfire-stand.obj"
+dest_files=["res://.godot/imported/campfire-stand.obj-50058baeebdebe255fa6f0ef20b065d1.mesh", "res://.godot/imported/campfire-stand.obj-50058baeebdebe255fa6f0ef20b065d1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

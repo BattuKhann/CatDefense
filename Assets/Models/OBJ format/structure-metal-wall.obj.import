@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://co415otua3urb"
+path="res://.godot/imported/structure-metal-wall.obj-d6fe87f732a004ca5a617e2703de72fe.mesh"
+
+[deps]
+
+files=["res://.godot/imported/structure-metal-wall.obj-d6fe87f732a004ca5a617e2703de72fe.mesh"]
+
+source_file="res://Assets/Models/OBJ format/structure-metal-wall.obj"
+dest_files=["res://.godot/imported/structure-metal-wall.obj-d6fe87f732a004ca5a617e2703de72fe.mesh", "res://.godot/imported/structure-metal-wall.obj-d6fe87f732a004ca5a617e2703de72fe.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

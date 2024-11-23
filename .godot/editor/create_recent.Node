@@ -1,9 +1,9 @@
+Node3D
 MeshInstance3D
 Timer
 CSGCylinder3D
 CSGCombiner3D
 Area3D
-Node3D
 NavigationRegion3D
 AnimatedSprite3D
 CollisionShape3D

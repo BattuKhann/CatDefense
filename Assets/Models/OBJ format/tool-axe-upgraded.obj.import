@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bi6gwj01lv1im"
+path="res://.godot/imported/tool-axe-upgraded.obj-7973d7606b5a1e6ab9c1c3fcc6ad9c6f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tool-axe-upgraded.obj-7973d7606b5a1e6ab9c1c3fcc6ad9c6f.mesh"]
+
+source_file="res://Assets/Models/OBJ format/tool-axe-upgraded.obj"
+dest_files=["res://.godot/imported/tool-axe-upgraded.obj-7973d7606b5a1e6ab9c1c3fcc6ad9c6f.mesh", "res://.godot/imported/tool-axe-upgraded.obj-7973d7606b5a1e6ab9c1c3fcc6ad9c6f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
