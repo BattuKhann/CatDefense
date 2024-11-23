@@ -34,6 +34,8 @@ mesh = SubResource("PlaneMesh_6oua1")
 surface_material_override/0 = SubResource("StandardMaterial3D_yinec")
 
 [node name="Square1" type="Area3D" parent="Row1"]
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row1/Square1"]
@@ -44,6 +46,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square2" type="Area3D" parent="Row1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row1/Square2"]
@@ -54,6 +58,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square3" type="Area3D" parent="Row1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row1/Square3"]
@@ -64,6 +70,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square4" type="Area3D" parent="Row1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row1/Square4"]
@@ -74,6 +82,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square5" type="Area3D" parent="Row1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row1/Square5"]
@@ -84,6 +94,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square6" type="Area3D" parent="Row1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row1/Square6"]
@@ -94,6 +106,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square7" type="Area3D" parent="Row1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row1/Square7"]
@@ -104,6 +118,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square8" type="Area3D" parent="Row1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row1/Square8"]
@@ -114,6 +130,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square9" type="Area3D" parent="Row1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row1/Square9"]
@@ -132,6 +150,8 @@ mesh = SubResource("PlaneMesh_6oua1")
 surface_material_override/0 = SubResource("StandardMaterial3D_yinec")
 
 [node name="Square1" type="Area3D" parent="Row2"]
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row2/Square1"]
@@ -142,6 +162,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square2" type="Area3D" parent="Row2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row2/Square2"]
@@ -152,6 +174,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square3" type="Area3D" parent="Row2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row2/Square3"]
@@ -162,6 +186,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square4" type="Area3D" parent="Row2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row2/Square4"]
@@ -172,6 +198,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square5" type="Area3D" parent="Row2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row2/Square5"]
@@ -182,6 +210,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square6" type="Area3D" parent="Row2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row2/Square6"]
@@ -192,6 +222,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square7" type="Area3D" parent="Row2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row2/Square7"]
@@ -202,6 +234,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square8" type="Area3D" parent="Row2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row2/Square8"]
@@ -212,6 +246,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square9" type="Area3D" parent="Row2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row2/Square9"]
@@ -230,6 +266,8 @@ mesh = SubResource("PlaneMesh_6oua1")
 surface_material_override/0 = SubResource("StandardMaterial3D_yinec")
 
 [node name="Square1" type="Area3D" parent="Row3"]
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row3/Square1"]
@@ -240,6 +278,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square2" type="Area3D" parent="Row3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row3/Square2"]
@@ -250,6 +290,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square3" type="Area3D" parent="Row3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row3/Square3"]
@@ -260,6 +302,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square4" type="Area3D" parent="Row3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row3/Square4"]
@@ -270,6 +314,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square5" type="Area3D" parent="Row3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row3/Square5"]
@@ -280,6 +326,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square6" type="Area3D" parent="Row3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row3/Square6"]
@@ -290,6 +338,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square7" type="Area3D" parent="Row3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row3/Square7"]
@@ -300,6 +350,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square8" type="Area3D" parent="Row3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row3/Square8"]
@@ -310,6 +362,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square9" type="Area3D" parent="Row3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row3/Square9"]
@@ -328,6 +382,8 @@ mesh = SubResource("PlaneMesh_6oua1")
 surface_material_override/0 = SubResource("StandardMaterial3D_yinec")
 
 [node name="Square1" type="Area3D" parent="Row4"]
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row4/Square1"]
@@ -338,6 +394,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square2" type="Area3D" parent="Row4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row4/Square2"]
@@ -348,6 +406,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square3" type="Area3D" parent="Row4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row4/Square3"]
@@ -358,6 +418,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square4" type="Area3D" parent="Row4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row4/Square4"]
@@ -368,6 +430,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square5" type="Area3D" parent="Row4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row4/Square5"]
@@ -378,6 +442,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square6" type="Area3D" parent="Row4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row4/Square6"]
@@ -388,6 +454,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square7" type="Area3D" parent="Row4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row4/Square7"]
@@ -398,6 +466,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square8" type="Area3D" parent="Row4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row4/Square8"]
@@ -408,6 +478,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square9" type="Area3D" parent="Row4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row4/Square9"]
@@ -426,6 +498,8 @@ mesh = SubResource("PlaneMesh_6oua1")
 surface_material_override/0 = SubResource("StandardMaterial3D_yinec")
 
 [node name="Square1" type="Area3D" parent="Row5"]
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row5/Square1"]
@@ -436,6 +510,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square2" type="Area3D" parent="Row5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row5/Square2"]
@@ -446,6 +522,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square3" type="Area3D" parent="Row5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row5/Square3"]
@@ -456,6 +534,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square4" type="Area3D" parent="Row5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row5/Square4"]
@@ -466,6 +546,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square5" type="Area3D" parent="Row5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row5/Square5"]
@@ -476,6 +558,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square6" type="Area3D" parent="Row5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row5/Square6"]
@@ -486,6 +570,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square7" type="Area3D" parent="Row5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row5/Square7"]
@@ -496,6 +582,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square8" type="Area3D" parent="Row5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row5/Square8"]
@@ -506,6 +594,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square9" type="Area3D" parent="Row5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row5/Square9"]
@@ -524,6 +614,8 @@ mesh = SubResource("PlaneMesh_6oua1")
 surface_material_override/0 = SubResource("StandardMaterial3D_yinec")
 
 [node name="Square1" type="Area3D" parent="Row6"]
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row6/Square1"]
@@ -534,6 +626,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square2" type="Area3D" parent="Row6"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row6/Square2"]
@@ -544,6 +638,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square3" type="Area3D" parent="Row6"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row6/Square3"]
@@ -554,6 +650,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square4" type="Area3D" parent="Row6"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row6/Square4"]
@@ -564,6 +662,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square5" type="Area3D" parent="Row6"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row6/Square5"]
@@ -574,6 +674,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square6" type="Area3D" parent="Row6"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row6/Square6"]
@@ -584,6 +686,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square7" type="Area3D" parent="Row6"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row6/Square7"]
@@ -594,6 +698,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square8" type="Area3D" parent="Row6"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row6/Square8"]
@@ -604,6 +710,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square9" type="Area3D" parent="Row6"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row6/Square9"]
@@ -622,6 +730,8 @@ mesh = SubResource("PlaneMesh_6oua1")
 surface_material_override/0 = SubResource("StandardMaterial3D_yinec")
 
 [node name="Square1" type="Area3D" parent="Row7"]
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row7/Square1"]
@@ -632,6 +742,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square2" type="Area3D" parent="Row7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row7/Square2"]
@@ -642,6 +754,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square3" type="Area3D" parent="Row7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row7/Square3"]
@@ -652,6 +766,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square4" type="Area3D" parent="Row7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row7/Square4"]
@@ -662,6 +778,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square5" type="Area3D" parent="Row7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row7/Square5"]
@@ -672,6 +790,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square6" type="Area3D" parent="Row7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row7/Square6"]
@@ -682,6 +802,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square7" type="Area3D" parent="Row7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row7/Square7"]
@@ -692,6 +814,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square8" type="Area3D" parent="Row7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row7/Square8"]
@@ -702,6 +826,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square9" type="Area3D" parent="Row7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row7/Square9"]
@@ -720,6 +846,8 @@ mesh = SubResource("PlaneMesh_6oua1")
 surface_material_override/0 = SubResource("StandardMaterial3D_yinec")
 
 [node name="Square1" type="Area3D" parent="Row8"]
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row8/Square1"]
@@ -730,6 +858,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square2" type="Area3D" parent="Row8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row8/Square2"]
@@ -740,6 +870,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square3" type="Area3D" parent="Row8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row8/Square3"]
@@ -750,6 +882,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square4" type="Area3D" parent="Row8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row8/Square4"]
@@ -760,6 +894,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square5" type="Area3D" parent="Row8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row8/Square5"]
@@ -770,6 +906,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square6" type="Area3D" parent="Row8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row8/Square6"]
@@ -780,6 +918,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square7" type="Area3D" parent="Row8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row8/Square7"]
@@ -790,6 +930,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square8" type="Area3D" parent="Row8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row8/Square8"]
@@ -800,6 +942,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square9" type="Area3D" parent="Row8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row8/Square9"]
@@ -818,6 +962,8 @@ mesh = SubResource("PlaneMesh_6oua1")
 surface_material_override/0 = SubResource("StandardMaterial3D_yinec")
 
 [node name="Square1" type="Area3D" parent="Row9"]
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row9/Square1"]
@@ -828,6 +974,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square2" type="Area3D" parent="Row9"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row9/Square2"]
@@ -838,6 +986,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square3" type="Area3D" parent="Row9"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row9/Square3"]
@@ -848,6 +998,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square4" type="Area3D" parent="Row9"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row9/Square4"]
@@ -858,6 +1010,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square5" type="Area3D" parent="Row9"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row9/Square5"]
@@ -868,6 +1022,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square6" type="Area3D" parent="Row9"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row9/Square6"]
@@ -878,6 +1034,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square7" type="Area3D" parent="Row9"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row9/Square7"]
@@ -888,6 +1046,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square8" type="Area3D" parent="Row9"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row9/Square8"]
@@ -898,6 +1058,8 @@ shape = SubResource("ConcavePolygonShape3D_l2uty")
 
 [node name="Square9" type="Area3D" parent="Row9"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("3_s1rgh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Row9/Square9"]

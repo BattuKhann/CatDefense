@@ -61,9 +61,15 @@ func _physics_process(_delta):
 	var origin:Vector3 = cam.project_ray_origin(mouse_position)
 	var end:Vector3 = origin + cam.project_ray_normal(mouse_position) * RAYCAST_LENGTH
 	var query = PhysicsRayQueryParameters3D.create(origin, end)
+	query.collision_mask = 2
 	query.collide_with_areas = true
 	var rayResult:Dictionary = space_state.intersect_ray(query)
-	
+
+	#if rayResult.size() > 0:
+		#for collider in rayResult:
+			#if collider is Square:
+				#co = collider
+			
 	if rayResult.size() > 0:
 		co = rayResult.get("collider")
 		
