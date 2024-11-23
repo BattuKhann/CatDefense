@@ -25,7 +25,7 @@ point_count = 3
 [sub_resource type="CurveTexture" id="CurveTexture_mn5q4"]
 curve = SubResource("Curve_hjoim")
 
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_witr4"]
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_0jyd6"]
 resource_local_to_scene = true
 spread = 80.0
 initial_velocity_min = 1.0
@@ -63,7 +63,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_0b303")
 
 [node name="EndParticles" parent="." instance=ExtResource("2_cg70e")]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
-process_material = SubResource("ParticleProcessMaterial_witr4")
+process_material = SubResource("ParticleProcessMaterial_0jyd6")
 
 [node name="BeamParticles" parent="." instance=ExtResource("3_r0qj8")]
 process_material = SubResource("ParticleProcessMaterial_qck7p")

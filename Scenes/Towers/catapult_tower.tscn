@@ -368,14 +368,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.471744, 0.052416, 0.538335)
 mesh = SubResource("ArrayMesh_4xrjs")
 skeleton = NodePath("")
 
+[node name="Yarn" parent="siege-catapult2" instance=ExtResource("4_u5ngo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.73, 1.44384, -0.016)
+visible = false
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_hjv83")
 }
-
-[node name="Yarn" parent="." instance=ExtResource("4_u5ngo")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.73, 2.769, -0.016)
-visible = false
 
 [node name="LOS" type="Area3D" parent="."]
 
@@ -411,3 +411,4 @@ wait_time = 0.25
 autostart = true
 
 [connection signal="timeout" from="ReloadTimer" to="." method="_on_reload"]
+[connection signal="timeout" from="VisionTimer" to="." method="_visionCheck"]

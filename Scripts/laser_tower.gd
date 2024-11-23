@@ -11,32 +11,20 @@ var target: Node3D
 var firingTime = 3.0
 
 func _ready() -> void:
-	aim(Vector3(3, 50, 0))
+	aim(Vector3(3, -1, 0))
 	fire()
 	
 func _process(delta: float) -> void:
 	pass
 
 func aim(target: Vector3):
-	var direction = (target - laser_beam.global_transform.origin).normalized()
+	pointer.look_at(Vector3(target.x, pointer.global_position.y, target.z))
+	pointer.global_rotation.y -= PI/2
 	
-	direction.y = 0
-	direction = direction.normalized()
-
-	if direction.length() > 0:
-		pointer.look_at(pointer.global_transform.origin + direction, Vector3.UP)
-		pointer.global_rotation.y -= PI/2
+	laser_beam.look_at(target)
+	laser_beam.global_rotation.x += PI/2
+	pass
 		
-	var direction2 = (target - laser_beam.global_transform.origin).normalized()
-	
-	direction2.x = 0
-	direction.z = 0
-	#direction2 = direction2.normalized()
-
-	# Prevent invalid directions
-	if direction2.length() > 0:
-		laser_beam.look_at(laser_beam.global_transform.origin + direction2, Vector3.UP)
-		laser_beam.global_rotation.z += PI/4
 
 func fire():
 	#look_at(target)
