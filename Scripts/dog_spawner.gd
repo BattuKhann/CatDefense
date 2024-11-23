@@ -79,7 +79,16 @@ func spawnDogs():
 	elif wave <= 29:
 		pass
 	elif wave == 30:
-		pass
+		var doberc: Node3D = dober.instantiate()
+		var doberc2: Node3D = dober.instantiate()
+		var doberc3: Node3D = dober.instantiate()
+		var doberc4: Node3D = dober.instantiate()
+		
+		repeatsLeft = 8
+		setStuff(doberc, spawn_1)
+		setStuff(doberc2, spawn_2)
+		setStuff(doberc3, spawn_3)
+		setStuff(doberc4, spawn_4)
 
 func spawnExtraChihuahua():
 	var chiwc: Node3D = chihuahua.instantiate()
@@ -88,6 +97,10 @@ func spawnExtraChihuahua():
 func spawnExtraPitbull():
 	var pit: Node3D = pitbull.instantiate()
 	setStuff(pit, spawn_5)
+
+func spawnExtraDoberman():
+	var dob: Node3D = dober.instantiate()
+	setStuff(dob, spawn_4)
 
 func _headstart_timeout():
 	spawning = true
@@ -104,6 +117,14 @@ func _extraneous_timer_timeout():
 	if repeatsLeft > 0:
 		repeatsLeft -= 1
 		extraTimer.start()
-		spawnExtraChihuahua()
+		
+		var i = int(randi_range(1,4))
+		
+		if i == 1:
+			spawnExtraDoberman()
+		elif i == 2:
+			spawnExtraPitbull()
+		else:
+			spawnExtraChihuahua()
 	else:
 		pass
