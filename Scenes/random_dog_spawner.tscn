@@ -32,7 +32,8 @@ one_shot = true
 autostart = true
 
 [node name="ExtraneousDogsTimer" type="Timer" parent="."]
-wait_time = 5.0
+wait_time = 3.0
 
 [connection signal="timeout" from="WaveTimer" to="." method="_wave_timer_timeout"]
 [connection signal="timeout" from="Headstart" to="." method="_headstart_timeout"]
+[connection signal="timeout" from="ExtraneousDogsTimer" to="." method="_extraneous_timer_timeout"]

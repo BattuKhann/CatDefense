@@ -3,7 +3,7 @@ extends CharacterBody3D
 const SPEED = 2
 const ACCEL = 8
 
-@export var DAMAGE = 15
+@export var DAMAGE = 12
 @export var camera3d: Camera3D
 @export var health = 200
 

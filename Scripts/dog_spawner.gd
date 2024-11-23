@@ -3,9 +3,11 @@ extends Node3D
 @export var wave = 0
 var spawning;
 var spawns = []
+var repeatsLeft = 0
 
 @onready var waveTimer = $WaveTimer
 @onready var headstart = $Headstart
+@onready var extraTimer = $ExtraneousDogsTimer
 
 @onready var spawn_1 = $Spawn1
 @onready var spawn_2 = $Spawn2
@@ -39,7 +41,19 @@ func setStuff(obj: Node3D, spawn: Node3D):
 	get_tree().root.add_child(obj)
 
 func spawnDogs():
-	if wave <= 5:
+	if wave <= 3:
+		var pitc: Node3D = pitbull.instantiate()
+		var pitc2: Node3D = pitbull.instantiate()
+		
+		setStuff(pitc2, spawn_1)
+		setStuff(pitc, spawn_2)
+	elif wave <= 5:
+		var doberc: Node3D = dober.instantiate()
+		var pitc: Node3D = pitbull.instantiate()
+		
+		setStuff(doberc, spawn_1)
+		setStuff(pitc, spawn_2)
+	elif wave <= 10:
 		var doberc: Node3D = dober.instantiate()
 		var pitc: Node3D = pitbull.instantiate()
 		var chiwc: Node3D = chihuahua.instantiate()
@@ -47,10 +61,17 @@ func spawnDogs():
 		setStuff(doberc, spawn_1)
 		setStuff(pitc, spawn_2)
 		setStuff(chiwc, spawn_3)
-	elif wave <= 10:
-		pass
 	elif wave <= 15:
-		pass
+		var doberc: Node3D = dober.instantiate()
+		var doberc2: Node3D = dober.instantiate()
+		var pitc: Node3D = pitbull.instantiate()
+		
+		setStuff(doberc, spawn_1)
+		setStuff(doberc2, spawn_2)
+		setStuff(pitc, spawn_3)
+		
+		repeatsLeft = 1
+		extraTimer.start()
 	elif wave <= 20:
 		pass
 	elif wave <= 25:
@@ -59,6 +80,14 @@ func spawnDogs():
 		pass
 	elif wave == 30:
 		pass
+
+func spawnExtraChihuahua():
+	var chiwc: Node3D = chihuahua.instantiate()
+	setStuff(chiwc, spawn_6)
+
+func spawnExtraPitbull():
+	var pit: Node3D = pitbull.instantiate()
+	setStuff(pit, spawn_5)
 
 func _headstart_timeout():
 	spawning = true
@@ -70,3 +99,11 @@ func _wave_timer_timeout():
 	wave += 1
 	waveTimer.start()
 	spawnDogs()
+
+func _extraneous_timer_timeout():
+	if repeatsLeft > 0:
+		repeatsLeft -= 1
+		extraTimer.start()
+		spawnExtraChihuahua()
+	else:
+		pass

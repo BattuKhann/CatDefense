@@ -71,7 +71,7 @@ transform = Transform3D(20, 0, 0, 0, 1, 0, 0, 0, 20, 0, -0.5, 0)
 shape = SubResource("BoxShape3D_577my")
 
 [node name="RandomDogSpawner" parent="NavigationRegion3D" instance=ExtResource("5_oip7q")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6, 2, 0)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6, 2.5, 0)
 
 [node name="PlacementSystem" parent="." instance=ExtResource("2_tduuc")]
 transform = Transform3D(1, 0, 1.77636e-14, 0, 1, 4.44089e-15, -1.06581e-14, -2.66454e-15, 1, 2.38419e-06, 2.14577e-06, 1.13687e-13)

@@ -1,7 +1,7 @@
 extends Node3D
 class_name Wall
 
-@export var health = 300
+@export var health = 400
 
 func hurt(damage):
 	health -= damage
