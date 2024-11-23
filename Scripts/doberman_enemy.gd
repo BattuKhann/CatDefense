@@ -1,11 +1,11 @@
 extends CharacterBody3D
 
-const SPEED = 2.0
-const ACCEL = 8
+const SPEED = 1.7
+const ACCEL = 6
 
 @export var DAMAGE = 10
 @export var camera3d: Camera3D
-@export var health = 500
+@export var health = 400
 
 @export var damage: int = 10  # Damage dealt by this enemy
 @export var attack_range: float = 2 # Range within which the enemy will attack

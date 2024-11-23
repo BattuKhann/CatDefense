@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://soi0rpdrjb4x"]
+
+[ext_resource type="Script" path="res://Scripts/dog_spawner.gd" id="1_rhfuf"]
+
+[node name="RandomDogSpawner" type="Node3D"]
+script = ExtResource("1_rhfuf")
+
+[node name="Spawn1" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="Spawn2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Spawn3" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Spawn4" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="Spawn5" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
+
+[node name="Spawn6" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+
+[node name="WaveTimer" type="Timer" parent="."]
+wait_time = 20.0
+
+[node name="Headstart" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+autostart = true
+
+[node name="ExtraneousDogsTimer" type="Timer" parent="."]
+wait_time = 5.0
+
+[connection signal="timeout" from="WaveTimer" to="." method="_wave_timer_timeout"]
+[connection signal="timeout" from="Headstart" to="." method="_headstart_timeout"]
