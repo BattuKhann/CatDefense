@@ -1,5 +1,7 @@
 CollisionShape3D
 StaticBody3D
+AudioStreamPlayer3D
+Sprite3D
 MeshInstance3D
 Node3D
 Timer
@@ -10,5 +12,3 @@ NavigationRegion3D
 AnimatedSprite3D
 CollisionPolygon3D
 CharacterBody3D
-NavigationAgent3D
-Sprite3D

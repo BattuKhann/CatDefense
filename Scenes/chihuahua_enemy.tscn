@@ -1,7 +1,10 @@
-[gd_scene load_steps=29 format=3 uid="uid://puvr0513paej"]
+[gd_scene load_steps=32 format=3 uid="uid://puvr0513paej"]
 
 [ext_resource type="Script" path="res://Scripts/chihuahua_enemy.gd" id="1_lc4p6"]
 [ext_resource type="Texture2D" uid="uid://byftmeuxxm6xb" path="res://Assets/Pixel Dogs-Sprites/Dogs-Remastered-08.png" id="3_1upyj"]
+[ext_resource type="AudioStream" uid="uid://dxwi7w3l2p6nd" path="res://Assets/Audio/dog_hurt.mp3" id="3_vvc7c"]
+[ext_resource type="AudioStream" uid="uid://bb5xejf2eq7vo" path="res://Assets/Audio/chi_bark.mp3" id="4_s68dv"]
+[ext_resource type="AudioStream" uid="uid://dd8tf077mbabt" path="res://Assets/Audio/dog_death.mp3" id="5_um7i7"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0ea0r"]
 
@@ -217,3 +220,15 @@ animation = &"death"
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 path_max_distance = 100.01
 height = 2.0
+
+[node name="Hurt" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_vvc7c")
+volume_db = -40.0
+
+[node name="Attack" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4_s68dv")
+volume_db = -40.0
+
+[node name="Death" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("5_um7i7")
+volume_db = -40.0

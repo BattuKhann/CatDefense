@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://b33iti5t77ij4"]
+[gd_scene load_steps=26 format=3 uid="uid://b33iti5t77ij4"]
 
 [ext_resource type="PackedScene" uid="uid://df5h3hmm55bq0" path="res://Scenes/wave_ui.tscn" id="1_1u3ij"]
 [ext_resource type="PackedScene" uid="uid://qsu4xbha5uot" path="res://Scenes/player_ui.tscn" id="1_wai84"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://468xuqpurgrx" path="res://Scenes/GridSystem.tscn" id="3_15v5e"]
 [ext_resource type="PackedScene" uid="uid://soi0rpdrjb4x" path="res://Scenes/random_dog_spawner.tscn" id="4_q4pg6"]
 [ext_resource type="PackedScene" uid="uid://dyoijxsy0btqb" path="res://Scenes/placement_system.tscn" id="5_uiads"]
+[ext_resource type="PackedScene" uid="uid://bfng5jvr8a8r0" path="res://Scenes/meat.tscn" id="6_x8dy8"]
 [ext_resource type="ArrayMesh" uid="uid://cxfuj1ya2kcus" path="res://Assets/Models/OBJ format/patch-grass.obj" id="7_bgp8o"]
 [ext_resource type="ArrayMesh" uid="uid://ydxbqyh16lrp" path="res://Assets/Models/OBJ format/rock-a.obj" id="8_01c4s"]
 [ext_resource type="ArrayMesh" uid="uid://ba4sgmdtkpx8u" path="res://Assets/Models/OBJ format/rock-b.obj" id="9_tgu61"]
@@ -34,10 +35,11 @@ volumetric_fog_density = 0.015
 volumetric_fog_emission = Color(0.585303, 0.736576, 0.902161, 1)
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_chfoq"]
-vertices = PackedVector3Array(-49.5, 0.2, -49.5, -49.5, 0.2, 49.5, 49.5, 0.2, 49.5, 49.5, 0.2, -49.5)
+vertices = PackedVector3Array(-49.5, 0.382, -49.5, -49.5, 0.382, 49.5, 49.5, 0.382, 49.5, 49.5, 0.382, -49.5)
 polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1)]
-cell_height = 0.1
+cell_height = 0.2
 agent_height = 2.0
+agent_max_climb = 0.5
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5maff"]
 albedo_color = Color(0.114897, 0.114897, 0.114897, 1)
@@ -47,6 +49,8 @@ material = SubResource("StandardMaterial3D_5maff")
 size = Vector2(20, 20)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_x1wsw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wg0t4"]
 
 [node name="MainScene" type="Node3D"]
 
@@ -62,7 +66,7 @@ transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -
 shadow_enabled = true
 
 [node name="MainCamera" type="Camera3D" parent="."]
-transform = Transform3D(-3.96209e-08, -0.422381, 0.906419, -1.84628e-08, 0.906419, 0.422381, -1, 4.61853e-14, -4.37114e-08, 10.3836, 5.15387, 0)
+transform = Transform3D(-3.96209e-08, -0.422381, 0.906419, -1.84628e-08, 0.906419, 0.422381, -1, 8.52651e-14, -4.37115e-08, 10.3836, 4.79502, 0)
 script = ExtResource("2_dgsuw")
 
 [node name="RandomDogSpawner" parent="." instance=ExtResource("4_q4pg6")]
@@ -85,6 +89,33 @@ transform = Transform3D(100, 0, 0, 0, 5, 0, 0, 0, 100, 0, -2.5, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/StaticBody3D"]
 shape = SubResource("BoxShape3D_x1wsw")
+
+[node name="Meat" parent="NavigationRegion3D" instance=ExtResource("6_x8dy8")]
+transform = Transform3D(-1.31134e-08, 0, 0.3, 0, 0.3, 0, -0.3, 0, -1.31134e-08, 5.37131, 0, 0)
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(18.0455, 0, 0, 0, 2.95867, 0, 0, 0, 1, 3.99602, 0, 5.02067)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/StaticBody3D2"]
+shape = SubResource("BoxShape3D_wg0t4")
+
+[node name="StaticBody3D3" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(18.0455, 0, 0, 0, 2.95867, 0, 0, 0, 1, 3.99602, 0, -4.99758)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/StaticBody3D3"]
+shape = SubResource("BoxShape3D_wg0t4")
+
+[node name="StaticBody3D4" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(-4.36484e-06, 0, -1, 0, 2.95867, 0, 99.856, 0, -4.37114e-08, -4.53266, 0, -54.4961)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/StaticBody3D4"]
+shape = SubResource("BoxShape3D_wg0t4")
+
+[node name="StaticBody3D5" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(-4.36484e-06, 0, -1, 0, 2.95867, 0, 99.856, 0, -4.37114e-08, -4.53266, 0, 54.4412)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/StaticBody3D5"]
+shape = SubResource("BoxShape3D_wg0t4")
 
 [node name="PlacementSystem" parent="." instance=ExtResource("5_uiads")]
 transform = Transform3D(1, 0, 1.77636e-14, 0, 1, 4.44089e-15, -1.06581e-14, -2.66454e-15, 1, 2.38419e-06, 2.14577e-06, 1.13687e-13)

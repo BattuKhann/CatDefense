@@ -1,6 +1,9 @@
-[gd_scene load_steps=29 format=3 uid="uid://cqncun3qeaiy1"]
+[gd_scene load_steps=32 format=3 uid="uid://cqncun3qeaiy1"]
 
 [ext_resource type="Script" path="res://Scripts/pitbull_enemy.gd" id="1_qoo3u"]
+[ext_resource type="AudioStream" uid="uid://dxwi7w3l2p6nd" path="res://Assets/Audio/dog_hurt.mp3" id="3_mp38f"]
+[ext_resource type="AudioStream" uid="uid://7vhoqghfap4b" path="res://Assets/Audio/pitbull_bark.mp3" id="4_mwcxa"]
+[ext_resource type="AudioStream" uid="uid://dd8tf077mbabt" path="res://Assets/Audio/dog_death.mp3" id="5_7yuks"]
 [ext_resource type="Texture2D" uid="uid://bqo8xwot5ow4h" path="res://Assets/Pixel Dogs-Sprites/Dogs-Remastered-16.png" id="6_68yrw"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0ea0r"]
@@ -219,3 +222,15 @@ frame_progress = 1.0
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 path_max_distance = 100.01
 height = 2.0
+
+[node name="Hurt" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_mp38f")
+volume_db = -40.0
+
+[node name="Attack" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4_mwcxa")
+volume_db = -40.0
+
+[node name="Death" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("5_7yuks")
+volume_db = -40.0

@@ -7,6 +7,10 @@ const ACCEL = 10
 @export var camera3d: Camera3D
 @export var health = 100
 
+@onready var hurtsfx = $Hurt
+@onready var attack = $Attack
+@onready var death = $Death
+
 @export var damage: int = 8  # Damage dealt by this enemy
 @export var attack_range: float = 2 # Range within which the enemy will attack
 @export var attack_interval: float = 0.3  # Time between consecutive attacks
@@ -29,6 +33,7 @@ func _on_animation_finished():
 		
 		if isDead():
 			sprite3d.play("death")
+			death.play()
 		
 		if target:  # Check if the enemy still has a target
 			sprite3d.play("running")
@@ -44,6 +49,7 @@ func findCam():
 func hurt(damage: int):
 	health -= damage
 	sprite3d.play("hurt")
+	hurtsfx.play()
 
 func isDead() -> bool:
 	return health <= 0
@@ -118,8 +124,12 @@ func hurt_nearby_characters():
 			valid_characters.append(char)
 			
 			sprite3d.play("attack")
+			attack.play()
 			
 			if char and char is Wall and char.has_method("hurt"):
+				if !isDead():
+					char.hurt(DAMAGE)
+			elif char and char is Wagyu and char.has_method("hurt"):
 				if !isDead():
 					char.hurt(DAMAGE)
 			
