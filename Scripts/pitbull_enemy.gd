@@ -9,7 +9,7 @@ const ACCEL = 8
 
 @export var damage: int = 15  # Damage dealt by this enemy
 @export var attack_range: float = 2 # Range within which the enemy will attack
-@export var attack_interval: float = 0.3  # Time between consecutive attacks
+@export var attack_interval: float = 0.5  # Time between consecutive attacks
 
 var attack_timer = 0.0  # Tracks time since last attack 
 
