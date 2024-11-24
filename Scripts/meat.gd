@@ -8,9 +8,9 @@ func hurt(damage):
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	health = 1000
+	health = 10
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if health <= 0:
-		queue_free() # game over
+		get_tree().change_scene_to_file("res://Scenes/game_over.tscn")

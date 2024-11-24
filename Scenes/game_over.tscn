@@ -1,0 +1,110 @@
+[gd_scene load_steps=7 format=3 uid="uid://bkwn53vh7ihnw"]
+
+[ext_resource type="Script" path="res://Scripts/game_over.gd" id="1_ab7yh"]
+[ext_resource type="Texture2D" uid="uid://b61un3yhgxkr3" path="res://Assets/Testing_sprite/HankHill.png" id="1_p54ps"]
+[ext_resource type="Texture2D" uid="uid://dpmxfc06ekikk" path="res://Assets/Testing_sprite/weirdal.jpg" id="2_w0nij"]
+[ext_resource type="AudioStream" uid="uid://buobrgl818kiv" path="res://Assets/Audio/gong.mp3" id="3_ft7x8"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fxaer"]
+font_size = 80
+font_color = Color(1, 0.0627451, 0.0627451, 1)
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 20
+shadow_color = Color(0.321569, 0, 0, 1)
+shadow_offset = Vector2(3, 3)
+
+[sub_resource type="LabelSettings" id="LabelSettings_xljy1"]
+font_size = 50
+font_color = Color(0.933445, 0, 0.00710448, 1)
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 10
+shadow_color = Color(0.301109, 0, 0, 1)
+shadow_offset = Vector2(3, 3)
+
+[node name="GameOver" type="CanvasLayer"]
+script = ExtResource("1_ab7yh")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 240.0
+offset_right = 725.0
+offset_bottom = 1316.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_p54ps")
+
+[node name="TextureRect2" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_left = 856.0
+offset_top = 418.0
+offset_right = 1328.0
+offset_bottom = 1110.0
+rotation = -0.354372
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_w0nij")
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -231.0
+offset_top = -235.0
+offset_right = 228.0
+offset_bottom = -125.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "GAME OVER"
+label_settings = SubResource("LabelSettings_fxaer")
+
+[node name="Label2" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -277.0
+offset_top = -126.0
+offset_right = 280.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "the dogs ate the meat!!"
+label_settings = SubResource("LabelSettings_xljy1")
+
+[node name="quit" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 541.0
+offset_top = 511.0
+offset_right = 583.0
+offset_bottom = 542.0
+scale = Vector2(2, 2)
+text = "Quit"
+
+[node name="retry" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 533.0
+offset_top = 323.0
+offset_right = 583.0
+offset_bottom = 354.0
+scale = Vector2(2, 2)
+text = "Retry
+"
+
+[node name="audio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_ft7x8")
+volume_db = 20.0
+
+[connection signal="pressed" from="Control/quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Control/retry" to="." method="_on_retry_pressed"]
