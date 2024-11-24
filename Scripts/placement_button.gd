@@ -2,6 +2,7 @@ extends Button
 
 @export var button_icon:Texture2D
 @export var draggable:PackedScene
+@export var placable: PackedScene
 @onready var ui: PlayerUi = $"../.."
 
 # Called when the node enters the scene tree for the first time.
@@ -15,4 +16,4 @@ func _process(delta: float) -> void:
 
 
 func _on_pressed() -> void:
-	ui.selectObject(draggable)
+	ui.selectObject(draggable, placable)

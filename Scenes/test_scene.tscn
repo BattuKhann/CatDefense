@@ -139,21 +139,6 @@ shape = SubResource("BoxShape3D_16q0b")
 [node name="ArcherTower" parent="." instance=ExtResource("9_24b4e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
 
-[node name="Archer2" parent="ArcherTower" index="5"]
-visible = true
-
-[node name="Archer3" parent="ArcherTower" index="6"]
-visible = true
-
-[node name="Archer4" parent="ArcherTower" index="7"]
-visible = true
-
-[node name="Archer5" parent="ArcherTower" index="8"]
-visible = true
-
-[node name="Archer6" parent="ArcherTower" index="9"]
-visible = true
-
 [node name="DobermanEnemy" parent="." instance=ExtResource("10_h8x48")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2, 0)
 

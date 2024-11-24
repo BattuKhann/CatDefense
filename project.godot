@@ -23,8 +23,16 @@ project/assembly_name="CatKingdom"
 
 enabled=PackedStringArray("res://addons/csgtomeshinstance/csg_converter-d68ad5524784ef0fe915ed6b415d513178314cd8/addons/csg_converter/plugin.cfg")
 
+[filesystem]
+
+import/blender/enabled=false
+
 [global_group]
 
 enemy="dog enemy group"
 tower_wall="wall group part of tower group"
 tower_group="cat troop"
+
+[rendering]
+
+limits/spatial_indexer/update_iterations_per_frame=1

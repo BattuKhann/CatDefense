@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://d4iomu1ndb7ch"]
+[gd_scene load_steps=13 format=4 uid="uid://d4iomu1ndb7ch"]
 
 [ext_resource type="Script" path="res://Scripts/wall.gd" id="1_l1eni"]
 [ext_resource type="Texture2D" uid="uid://bpbwmr4f8dhu7" path="res://Assets/kenney_castle-kit/Models/GLB format/Textures/colormap.png" id="1_yp3je"]
@@ -40,6 +40,9 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_62q7m")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_jkw4j"]
+points = PackedVector3Array(-0.5, 0, -0.5, 0.5, 0, -0.5, -0.5, 0, 0.5, -0.5, 1.30987, -0.5, 0.5, 0, 0.5, 0.5, 1.30987, -0.5, -0.5, 1.26486, 0.5, -0.5, 1.30987, 0.249902, 0.5, 1.26486, 0.5, 0.5, 1.30987, 0.249902)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_anm7w"]
 resource_name = "colormap"
@@ -124,6 +127,11 @@ script = ExtResource("1_l1eni")
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
 mesh = SubResource("ArrayMesh_h1pqv")
 skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_jkw4j")
 
 [node name="Wall_corner" type="MeshInstance3D" parent="."]
 visible = false

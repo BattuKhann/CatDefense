@@ -1,9 +1,19 @@
-[gd_scene load_steps=5 format=3 uid="uid://qsu4xbha5uot"]
+[gd_scene load_steps=15 format=3 uid="uid://qsu4xbha5uot"]
 
 [ext_resource type="Script" path="res://Scripts/player_ui.gd" id="1_qhr3q"]
 [ext_resource type="PackedScene" uid="uid://rcfbr08x6gnq" path="res://Scenes/placement_button.tscn" id="1_xsb7m"]
 [ext_resource type="Texture2D" uid="uid://bwj3l4vb7abs0" path="res://Assets/kenney_castle-kit/Previews/wall.png" id="2_vq42b"]
 [ext_resource type="PackedScene" uid="uid://homyvwp7g3wf" path="res://Assets/kenney_castle-kit/Models/GLB format/wall.glb" id="4_bk05t"]
+[ext_resource type="PackedScene" uid="uid://d4iomu1ndb7ch" path="res://Scenes/wall.tscn" id="5_bwab3"]
+[ext_resource type="Texture2D" uid="uid://lbabp6l1hwo4" path="res://Assets/kenney_castle-kit/Previews/siege-catapult.png" id="5_lhn86"]
+[ext_resource type="Texture2D" uid="uid://dfsqrkqeefjkl" path="res://Assets/LaserPreview.png" id="6_f580l"]
+[ext_resource type="PackedScene" uid="uid://wqk2h610lhp7" path="res://Scenes/Towers/catapult_tower_mesh.tscn" id="6_xqb3q"]
+[ext_resource type="Texture2D" uid="uid://u3pdahvkr4ey" path="res://Assets/ArcherPreview.png" id="7_fj131"]
+[ext_resource type="PackedScene" uid="uid://d3y25y3nlihn" path="res://Scenes/Towers/catapult_tower.tscn" id="8_5dsdo"]
+[ext_resource type="PackedScene" uid="uid://cqqt3y1knds5a" path="res://Scenes/Towers/archer_tower_mesh.tscn" id="8_oby3s"]
+[ext_resource type="PackedScene" uid="uid://ddo24ebk03i2v" path="res://Scenes/Towers/laser_tower.tscn" id="8_qobcj"]
+[ext_resource type="PackedScene" uid="uid://cs0wxkcxc7l3f" path="res://Scenes/Towers/laser_tower_mesh.tscn" id="10_lnjkl"]
+[ext_resource type="PackedScene" uid="uid://h7ekoxknfkg1" path="res://Scenes/Towers/archer_tower.tscn" id="10_mvkqg"]
 
 [node name="Player UI" type="Node2D"]
 script = ExtResource("1_qhr3q")
@@ -21,13 +31,75 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -48.0
+offset_left = -258.0
 offset_top = -104.0
-offset_right = 48.0
+offset_right = -162.0
 offset_bottom = -8.0
 grow_horizontal = 2
 grow_vertical = 0
+expand_icon = true
 button_icon = ExtResource("2_vq42b")
 draggable = ExtResource("4_bk05t")
+placable = ExtResource("5_bwab3")
+
+[node name="PlacementButton2" parent="Tower_Placement" instance=ExtResource("1_xsb7m")]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -108.0
+offset_top = -104.0
+offset_right = -12.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+expand_icon = true
+button_icon = ExtResource("5_lhn86")
+draggable = ExtResource("6_xqb3q")
+placable = ExtResource("8_5dsdo")
+
+[node name="PlacementButton3" parent="Tower_Placement" instance=ExtResource("1_xsb7m")]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -8.0
+offset_top = -104.0
+offset_right = 88.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+expand_icon = true
+button_icon = ExtResource("6_f580l")
+draggable = ExtResource("10_lnjkl")
+placable = ExtResource("8_qobcj")
+
+[node name="PlacementButton4" parent="Tower_Placement" instance=ExtResource("1_xsb7m")]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 92.0
+offset_top = -104.0
+offset_right = 188.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+expand_icon = true
+button_icon = ExtResource("7_fj131")
+draggable = ExtResource("8_oby3s")
+placable = ExtResource("10_mvkqg")
 
 [connection signal="pressed" from="Tower_Placement/PlacementButton" to="Tower_Placement/PlacementButton" method="_on_pressed"]
+[connection signal="pressed" from="Tower_Placement/PlacementButton2" to="Tower_Placement/PlacementButton2" method="_on_pressed"]
+[connection signal="pressed" from="Tower_Placement/PlacementButton3" to="Tower_Placement/PlacementButton3" method="_on_pressed"]
+[connection signal="pressed" from="Tower_Placement/PlacementButton4" to="Tower_Placement/PlacementButton4" method="_on_pressed"]

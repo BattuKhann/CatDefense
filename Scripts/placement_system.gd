@@ -8,6 +8,7 @@ var RAYCAST_LENGTH = 1000
 var last_hovered_area: Area3D = null
 var selected: PackedScene = null
 var placing: Node3D = null
+var currTower: PackedScene = null
 var canPlace: bool = true
 var co: CollisionObject3D
 
@@ -24,12 +25,13 @@ func _ready():
 	# debug
 	print("nav mesh is present from initilization")
 
-func selectObject(object: PackedScene):
+func selectObject(object: PackedScene, instance: PackedScene):
 	if selected == object:
 		selected = null
 		if placing:
 			placing.free()
 		placing = null
+		currTower = null
 	else:
 		selected = null
 		if placing:
@@ -38,6 +40,7 @@ func selectObject(object: PackedScene):
 		selected = object
 		placing = selected.instantiate()
 		add_child(placing)
+		currTower = instance
 		
 func placeObject():
 	print("hi")
@@ -84,11 +87,11 @@ func _physics_process(_delta):
 		if co and co is Area3D and placing:
 			placing.global_position = Vector3(co.global_position.x, 0.2, co.global_position.z)
 			canPlace = !co.tower
-			var mesh: MeshInstance3D = placing.get_child(0)
-			if !canPlace:
-				mesh.set_surface_override_material(0, error)
-			else:
-				mesh.set_surface_override_material(0, null)
+			for childMesh in placing.get_children():
+				if !canPlace:
+					childMesh.set_surface_override_material(0, error)
+				else:
+					childMesh.set_surface_override_material(0, null)
 		
 	elif last_hovered_area:
 		_highlight(last_hovered_area, false)
