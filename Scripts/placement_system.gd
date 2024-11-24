@@ -45,7 +45,7 @@ func selectObject(object: PackedScene, instance: PackedScene):
 func placeObject():
 	print("hi")
 	if selected and canPlace and co is Area3D:
-		var placed = selected.instantiate()
+		var placed = currTower.instantiate()
 		placed.global_position = Vector3(placing.global_position.x, 0, placing.global_position.z)
 		placed.add_to_group("tower_group")
 		placed.add_to_group("tower_wall")
