@@ -1,14 +1,14 @@
 extends Node3D
 class_name Wagyu
 
-@export var health = 1000
+@export var health = 100
 
 func hurt(damage):
 	health -= damage
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	health = 10
+	health = 100
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
